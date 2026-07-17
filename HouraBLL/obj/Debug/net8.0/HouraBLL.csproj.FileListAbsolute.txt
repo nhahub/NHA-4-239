@@ -1,0 +1,15 @@
+C:\Users\Mega Store\source\repos\HouraDotNet\HouraBLL\bin\Debug\net8.0\HouraBLL.deps.json
+C:\Users\Mega Store\source\repos\HouraDotNet\HouraBLL\bin\Debug\net8.0\HouraBLL.dll
+C:\Users\Mega Store\source\repos\HouraDotNet\HouraBLL\bin\Debug\net8.0\HouraBLL.pdb
+C:\Users\Mega Store\source\repos\HouraDotNet\HouraBLL\bin\Debug\net8.0\HouraDAL.dll
+C:\Users\Mega Store\source\repos\HouraDotNet\HouraBLL\bin\Debug\net8.0\HouraDAL.pdb
+C:\Users\Mega Store\source\repos\HouraDotNet\HouraBLL\obj\Debug\net8.0\HouraBLL.csproj.AssemblyReference.cache
+C:\Users\Mega Store\source\repos\HouraDotNet\HouraBLL\obj\Debug\net8.0\HouraBLL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Mega Store\source\repos\HouraDotNet\HouraBLL\obj\Debug\net8.0\HouraBLL.AssemblyInfoInputs.cache
+C:\Users\Mega Store\source\repos\HouraDotNet\HouraBLL\obj\Debug\net8.0\HouraBLL.AssemblyInfo.cs
+C:\Users\Mega Store\source\repos\HouraDotNet\HouraBLL\obj\Debug\net8.0\HouraBLL.csproj.CoreCompileInputs.cache
+C:\Users\Mega Store\source\repos\HouraDotNet\HouraBLL\obj\Debug\net8.0\HouraBLL.csproj.Up2Date
+C:\Users\Mega Store\source\repos\HouraDotNet\HouraBLL\obj\Debug\net8.0\HouraBLL.dll
+C:\Users\Mega Store\source\repos\HouraDotNet\HouraBLL\obj\Debug\net8.0\refint\HouraBLL.dll
+C:\Users\Mega Store\source\repos\HouraDotNet\HouraBLL\obj\Debug\net8.0\HouraBLL.pdb
+C:\Users\Mega Store\source\repos\HouraDotNet\HouraBLL\obj\Debug\net8.0\ref\HouraBLL.dll

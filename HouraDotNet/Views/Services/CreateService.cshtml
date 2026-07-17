@@ -1,0 +1,109 @@
+@using HouraDAL.Entities
+@{
+    ViewData["Title"] = "Create Service";
+    var categories = ViewBag.Categories as IEnumerable<Category>;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Create Service</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <link rel="stylesheet" href="~/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/myservices.css" />
+    <style>
+        .side-nav { width: 260px; }
+        .page-container { margin-left: 260px; padding: 30px; max-width: 700px; }
+        .form-card {
+            background: #fff;
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+        }
+        .form-card label { font-weight: 600; margin-top: 15px; display: block; }
+        .form-card input, .form-card select, .form-card textarea {
+            width: 100%;
+            padding: 10px;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+            margin-top: 6px;
+        }
+        .btn-submit {
+            background: #f5811f;
+            color: #fff;
+            border: none;
+            padding: 10px 25px;
+            border-radius: 8px;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+        .btn-submit:hover { background: #d96e12; }
+    </style>
+</head>
+<body>
+    <div class="side-nav min-vh-100 d-flex position-fixed z-3 bg-black">
+        <div class="rightSide d-flex flex-column justify-content-between min-vh-100 p-4">
+            <div>
+                <ul class="ul-nav">
+                    <li class="pt-4"><a class="nav-link text-white b-hover" asp-controller="Dashboard" asp-action="Index">home</a></li>
+                    <li class="pt-4"><a class="nav-link text-white b-hover" asp-controller="Services" asp-action="MyServices">my services</a></li>
+                    <li><a class="nav-link text-white b-hover" asp-controller="Dashboard" asp-action="Notifications">notification</a></li>
+                    <li><a class="nav-link text-white b-hover" asp-controller="TimeBank" asp-action="PurchaseHours">purchase hours</a></li>
+                    <li><a class="nav-link text-white b-hover" asp-controller="Services" asp-action="Browse">browse services</a></li>
+                    <li><a class="nav-link text-white b-hover top-0" asp-controller="Dashboard" asp-action="Profile">profile</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="page-container">
+        <h1>Create Service</h1>
+
+        @if (!ViewData.ModelState.IsValid)
+        {
+            <div class="alert alert-danger">
+                @foreach (var error in ViewData.ModelState.Values.SelectMany(v => v.Errors))
+                {
+                    <p class="m-0">@error.ErrorMessage</p>
+                }
+            </div>
+        }
+
+        <div class="form-card">
+            <form asp-controller="Services" asp-action="CreateService" method="post">
+                @Html.AntiForgeryToken()
+
+                <label for="postType">Post Type</label>
+                <select name="postType" id="postType" required>
+                    <option value="Offer">Offer (هعرض خدمة)</option>
+                    <option value="Request">Request (محتاج خدمة)</option>
+                </select>
+
+                <label for="categoryId">Category</label>
+                <select name="categoryId" id="categoryId" required>
+                    @if (categories != null)
+                    {
+                        foreach (var c in categories)
+                        {
+                            <option value="@c.CategoryId">@c.Name</option>
+                        }
+                    }
+                </select>
+
+                <label for="title">Title</label>
+                <input type="text" name="title" id="title" placeholder="Service title" required />
+
+                <label for="description">Description</label>
+                <textarea name="description" id="description" rows="4" placeholder="Describe the service" required></textarea>
+
+                <label for="estimatedDurationInMinutes">Estimated Duration (minutes)</label>
+                <input type="number" name="estimatedDurationInMinutes" id="estimatedDurationInMinutes" min="1" value="60" required />
+
+                <button type="submit" class="btn-submit"><i class="fa-solid fa-plus"></i> Create Service</button>
+                <a asp-controller="Services" asp-action="MyServices" class="btn btn-outline-secondary ms-2">Cancel</a>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,206 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Top Navigation */
+  .top-nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 25px;
+    padding: 20px;
+    background-color: #fff;
+    font-size: 19px;
+  }
+  
+  .top-nav a {
+    text-decoration: none;
+    color: #f2761d;
+  }
+  
+  .user-icon i {
+    font-size: 20px;
+    color: #f2761d;
+  }
+  
+  /* Profile Container */
+  .profile-container {
+    display: flex;
+    padding: 30px;
+    background: #fffaf7;
+  }
+  
+  /* Sidebar */
+  .sidebar {
+    flex: 0.3;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .sidebar h2 {
+    margin-bottom: 20px;
+  }
+  
+  .profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin: 20px 0;
+  }
+  
+  .skills {
+    margin: 15px 0;
+  }
+  
+  .skills-label {
+    background-color: #f2761d;
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 0 15px 15px 0;
+    display: inline-block;
+  }
+  
+  .skill-tags {
+    margin-top: 10px;
+  }
+  
+  .skill-tags .tag {
+    display: inline-block;
+    background: #f2761d;
+    color: white;
+    padding: 5px 15px;
+    margin: 5px;
+    border-radius: 30px;
+    border: 2px dashed #000;
+    font-style: italic;
+    font-size: 14px;
+
+  }
+  
+  .name {
+    font-family: 'Georgia', serif;
+    font-size: 24px;
+    margin: 10px 0;
+  }
+  
+  .title {
+    color: #f2761d;
+    font-style: italic;
+    margin-bottom: 10px;
+  }
+  
+  .edit-profile {
+    background: #f2761d;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .main-content {
+    flex: 0.7;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+   
+  }
+  
+  .about-me, .bottom-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 20px;
+    padding-top: 20px ;
+  }
+  .about-me h3 {
+    color: #f2761d;
+    padding-left: 20px;
+    font-size: 30px;
+  }
+  .about-me p {
+
+    padding-top: 10px;
+    padding-left: 20px;
+    font-size: 25px;
+    font-style: italic;
+  }
+  
+  .bottom-content {
+    display: flex;
+    gap: 20px;
+  }
+  
+  /* الجزء الشمال */
+  .service-offered {
+    flex: 1;
+    text-align: left;
+    margin-top: 40px;
+  }
+  .service-offered h3 {
+color: #f2761d;
+padding-bottom: 15px;
+  }
+  .service-offered .hour {
+    color: #f2761d;
+  }
+  .timebanking {
+    flex: 1;
+  }
+  
+  .service-time {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 15px 0;
+  }
+  
+  .service-time i {
+    font-size: 28px;
+    color: #f2761d;
+  }
+  
+  .reviews {
+    margin-top: 15px;
+    text-align: left;
+  }
+  .reviews  h4{
+  color: #f2761d;
+
+}
+  
+  .reviews .stars i {
+    color: #f2761d;
+    margin-right: 2px;
+  }
+  
+  .review-text {
+    font-style: italic;
+    margin-top: 10px;
+  }
+  
+  .reviewer {
+    text-align: left;
+    margin-top: 12px;
+    padding-top: px;
+    font-style: italic;
+  }
+  
+  .timebanking img {
+    width: 450px;
+    border-radius: 10px;
+  }
+  .line {
+    height: 2px;
+    background-color: #f2761d;
+    width: 550px;
+    margin: 10px 0;
+  }
+  
+  

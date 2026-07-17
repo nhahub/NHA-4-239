@@ -1,0 +1,140 @@
+﻿@model IEnumerable<ServicePosting>
+@{
+    ViewData["Title"] = "My Services";
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>My Services</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <link rel="stylesheet" href="~/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/myservices.css" />
+    <style>
+        .side-nav {
+            width: 260px;
+            transition: width 0.3s ease;
+        }
+
+            .side-nav.collapsed {
+                width: 70px;
+            }
+
+                .side-nav.collapsed .rightSide {
+                    display: none;
+                }
+
+        .container {
+            margin-left: 260px;
+            transition: margin-left 0.3s ease;
+            padding: 20px;
+        }
+
+        body.nav-collapsed .container {
+            margin-left: 70px;
+        }
+
+        .leftSide {
+            width: 70px;
+        }
+
+        .manue-i {
+            font-size: 26px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="side-nav min-vh-100 d-flex position-fixed z-3 bg-black" id="sideNav">
+        <div class="rightSide d-flex flex-column justify-content-between min-vh-100 p-4">
+            <div>
+                <ul class="ul-nav">
+                    <li class="pt-4"><a class="nav-link text-white b-hover" asp-controller="Dashboard" asp-action="Index">home</a></li>
+                    <li class="pt-4"><a class="nav-link text-white b-hover" asp-controller="Services" asp-action="MyServices">my services</a></li>
+                    <li><a class="nav-link text-white b-hover" asp-controller="Dashboard" asp-action="Notifications">notification</a></li>
+                    <li><a class="nav-link text-white b-hover" asp-controller="TimeBank" asp-action="PurchaseHours">purchase hours</a></li>
+                    <li><a class="nav-link text-white b-hover" asp-controller="Services" asp-action="Browse">browse services</a></li>
+                    <li><a class="nav-link text-white b-hover top-0" asp-controller="Dashboard" asp-action="Profile">profile</a></li>
+                </ul>
+            </div>
+            <div class="social-media text-white">
+                <i class="fa-brands fa-facebook pb-2"></i>
+                <i class="fa-brands fa-twitter pb-2"></i>
+                <i class="fa-solid fa-globe pb-2"></i>
+                <footer class="text-white">Copyright &copy; 2026 All Rights Reserved.</footer>
+            </div>
+        </div>
+        <div class="leftSide bg-white p-2 pt-4 text-black d-flex flex-column justify-content-between text-center">
+            <i class="fa-solid fa-bars manue-i" id="sideNavToggle"></i>
+            <div class="b-icons">
+                <i class="fa-solid fa-globe d-block pb-2"></i>
+                <i class="fa-solid fa-share-nodes"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <header class="header">
+            <h1>My Services</h1>
+            <div class="header-actions">
+                <input type="text" placeholder="Search Services" class="search-input" id="searchInput" />
+                <a asp-controller="Services" asp-action="CreateService" class="btn create-btn" style="text-decoration:none;"><i class="fa-solid fa-plus"></i> Create Service</a>
+                <i class="fa-solid fa-user user-icon"></i>
+            </div>
+        </header>
+
+        <section class="services-grid" id="servicesContainer">
+            @if (Model != null && Model.Any())
+            {
+                foreach (var posting in Model)
+                {
+                    <div class="service-card" data-title="@posting.Title.ToLower()" data-description="@posting.Description?.ToLower()">
+                        <h3>@posting.Title</h3>
+                        <p>@posting.Description</p>
+                        <span class="badge">@(posting.IsAvailable ? "Available" : "Not Available")</span>
+                        <span class="duration">@posting.EstimatedDurationInMinutes min</span>
+                    </div>
+                }
+            }
+            else
+            {
+                <p style="padding: 20px;">You haven't created any services yet. Click "Create Service" to add one.</p>
+            }
+            <p id="noResultsMsg" style="padding: 20px; display: none;">No services match your search.</p>
+        </section>
+    </div>
+
+    <script>
+        document.getElementById("sideNavToggle").addEventListener("click", function () {
+            document.getElementById("sideNav").classList.toggle("collapsed");
+            document.body.classList.toggle("nav-collapsed");
+        });
+
+        // فلترة فورية لكروت الخدمات حسب اللي مكتوب في مربع البحث
+        const searchInput = document.getElementById("searchInput");
+        const serviceCards = document.querySelectorAll(".service-card");
+        const noResultsMsg = document.getElementById("noResultsMsg");
+
+        if (searchInput) {
+            searchInput.addEventListener("input", function () {
+                const term = this.value.trim().toLowerCase();
+                let visibleCount = 0;
+
+                serviceCards.forEach(function (card) {
+                    const title = card.dataset.title || "";
+                    const description = card.dataset.description || "";
+                    const isMatch = title.includes(term) || description.includes(term);
+
+                    card.style.display = isMatch ? "" : "none";
+                    if (isMatch) visibleCount++;
+                });
+
+                if (noResultsMsg) {
+                    noResultsMsg.style.display = visibleCount === 0 ? "block" : "none";
+                }
+            });
+        }
+    </script>
+</body>
+</html>

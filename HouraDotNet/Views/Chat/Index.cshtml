@@ -1,0 +1,283 @@
+@{
+    ViewData["Title"] = "Chat";
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Note Interface</title>
+  <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css
+
+
+
+
+    
+"
+    />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="~/css/bootstrap.min.css" />
+   <script src="~/js/bootstrap.min.js"></script> 
+  <style>
+    footer {
+  background: #e67212;
+  color: white;
+  text-align: center;
+  padding: 20px 10px;
+}
+
+.footer-links a {
+  color: #000000;
+  margin: 0 10px;
+  text-decoration: none;
+}
+.ul-nav {
+  list-style: none;
+  color: white;
+  padding: 0;
+}
+.ul-nav li {
+  padding-block: 7px;
+  cursor: pointer;
+}
+
+.rightSide {
+  width: 80%;
+}
+.header-container,
+.hero-text,
+h2,
+.section,
+.text-warning {
+  padding-left: 100px !important;
+}
+.side-nav {
+  overflow: hidden;
+}
+.logo {
+  width: 50px;
+}
+.manue-i {
+  font-size: 30px;
+}
+.side-nav i {
+  cursor: pointer;
+}
+.ul-nav li {
+  position: relative;
+}
+li .focus-border {
+  position: relative;
+}
+
+li .focus-border::after {
+  content: "";
+  position: absolute;
+  bottom: 20%;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  transition: all 0.5s;
+}
+
+li .b-hover {
+  position: relative;
+}
+
+li .b-hover::after {
+  content: "";
+  position: absolute;
+  bottom: -20%;
+  right: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: black;
+  transition: all 0.5s;
+}
+
+li .b-hover:focus::after {
+  width: 100%;
+}
+li a,
+.nav-link {
+  padding-bottom: 10px;
+}
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #fef9f5;
+      width: 1000px;
+      height: 1000px;
+      margin-left: 125px;
+    }
+
+    .container {
+      display: flex;
+      height: 100vh;
+    }
+
+    .sidebar {
+      width: 350px;
+      background-color: #fce6c9;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    .search-box {
+      display: flex;
+      align-items: center;
+      background-color: #fff3e6;
+      border-radius: 20px;
+      padding: 8px 12px;
+      margin-bottom: 20px;
+    }
+
+    .search-box input {
+      border: none;
+      background: transparent;
+      margin-left: 10px;
+      width: 1000px;
+      font-size: 14px;
+      outline: none;
+    }
+
+    .user-list .user {
+      padding: 10px;
+      background-color: #f3dfc3;
+      border-radius: 10px;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      cursor: pointer;
+    }
+
+    .main-content {
+      padding: 10px 30px 30px 30px;
+      background-color: #f1ece5;
+      width: 1000px;
+    }
+
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+    }
+
+    .profile-icon {
+      font-size: 40px;
+      color: #f87d2a;
+    }
+
+    .note-box {
+      background-color: #f3dfc3;
+      padding: 15px;
+      border-radius: 10px;
+      margin-top: 50px;
+      border-left: 5px solid #f87d2a;
+      border-bottom: 6px solid #f58220;
+    }
+
+    .add-note-section {
+      margin-top: auto;
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      margin-top: 240px;
+    }
+
+    .add-note-section input {
+      flex: 1;
+      padding: 10px;
+      border-radius: 8px;
+      border: 1px solid #f87d2a;
+      outline: none;
+    }
+
+    .add-note-section button {
+      background-color: #f87d2a;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .add-note-section button:hover {
+      background-color: #e56b1e;
+    }
+  </style>
+</head>
+<body>
+  <div class="side-nav min-vh-100 d-flex position-fixed z-3 bg-black">
+    <div class="rightSide d-flex flex-column justify-content-between min-vh-100 p-4">
+      <div>
+        <ul class="ul-nav">
+          <li class="pt-4"><a class="nav-link b-hover" asp-controller="Home" asp-action="Index">home</a></li>
+          <li class="pt-4"><a class="nav-link b-hover" asp-controller="Services" asp-action="MyServices">my services</a></li>
+          <li><a class="nav-link b-hover" asp-controller="Dashboard" asp-action="Notifications">notification</a></li>
+          <li><a class="nav-link b-hover" asp-controller="Dashboard" asp-action="Index">dashboard</a></li>
+          <li><a class="nav-link b-hover" asp-controller="TimeBank" asp-action="PurchaseHours">purshace hours</a></li>
+          <li><a class="nav-link b-hover" asp-controller="Services" asp-action="QuickLearning">quick learning</a></li>
+          <li><a class="nav-link b-hover" asp-controller="Account" asp-action="Login">login</a></li>
+          <li><a class="nav-link b-hover" asp-controller="Account" asp-action="SignUp">sign up</a></li>
+          <li><a class="nav-link b-hover" asp-controller="Services" asp-action="Browse">browse services</a></li>
+          <li><a class="nav-link b-hover" asp-controller="Dashboard" asp-action="Profile">profile</a></li>
+          <li><a class="nav-link b-hover" asp-controller="Home" asp-action="Contact">contact us</a></li>
+        </ul>
+      </div>
+      <div class="social-media text-white">
+        <i class="fa-brands fa-facebook pb-2"></i>
+        <i class="fa-brands fa-twitter pb-2"></i>
+        <i class="fa-solid fa-globe pb-2"></i>
+        <footer class="text-white">Copyright Â© 2019 All Rights Reserved.</footer>
+      </div>
+    </div>
+    <div class="leftSide bg-white p-2 pt-4 text-black d-flex flex-column justify-content-between text-center">
+      <i class="fa-solid fa-bars manue-i"></i>
+      <div class="b-icons">
+        <i class="fa-solid fa-globe d-block pb-2"></i>
+        <i class="fa-solid fa-share-nodes"></i>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="sidebar">
+      <div class="search-box">
+        <i class="fa fa-search"></i>
+        <input type="text" placeholder="Search people">
+      </div>
+      <div class="user-list">
+        <div class="user"><i class="fa fa-user"></i> Mary</div>
+        <div class="user"><i class="fa fa-user"></i> Mona</div>
+        <div class="user"><i class="fa fa-user"></i> John Doe</div>
+      </div>
+    </div>
+
+    <div class="main-content">
+      <div class="header">
+        <i class="fa fa-user-circle profile-icon"></i>
+        <h2>Note with Sarah</h2>
+      </div>
+
+      <div class="note-box">
+        <p>📌 Tomorrow’s schedule confirmed at 4 PM.</p>
+      </div>
+
+      <div class="note-box">
+        <p>📝 Remember to prepare the writing materials before the session.</p>
+      </div>
+      <div class="add-note-section">
+        <input type="text" id="noteInput" placeholder="Write a new note...">
+        <button id="addNoteBtn"> Add Note </button>
+    </div>
+  </div>
+  <script src="~/js/jquery-3.7.1.min.js"></script>
+  <script src="~/js/chat.js"></script>
+</body>
+</html>

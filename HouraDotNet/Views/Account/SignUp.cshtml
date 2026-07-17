@@ -1,0 +1,129 @@
+﻿@{
+    ViewData["Title"] = "Sign Up";
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Houra - Sign Up</title>
+    <link rel="stylesheet" href="~/css/signup.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="~/img/233b436e-1119-40f2-a7c0-c202dda409f2.jpg" alt="Logo" />
+                <span>Houra</span>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a asp-controller="Dashboard" asp-action="Index">Home</a></li>
+                    <li><a href="#">How it Works</a></li>
+                    <li><a asp-controller="Services" asp-action="Browse">Browse Services</a></li>
+                </ul>
+            </nav>
+            <div class="auth-buttons">
+                <a asp-controller="Account" asp-action="Login" class="login-btn">Log In</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="form-section">
+            <h2>Sign Up</h2>
+
+            @if (!ViewData.ModelState.IsValid)
+            {
+                <div class="error-message" style="display:block;">
+                    @foreach (var error in ViewData.ModelState.Values.SelectMany(v => v.Errors))
+                    {
+                        <div>@error.ErrorMessage</div>
+                    }
+                </div>
+            }
+
+            <form asp-controller="Account" asp-action="SignUp" method="post" novalidate>
+                <input type="text" name="Name" placeholder="Name" required>
+                <div class="error-message" id="name-error"></div>
+
+                <input type="email" name="email" placeholder="Email" required>
+                <div class="error-message" id="email-error"></div>
+
+                <input type="password" name="password" placeholder="Password" required>
+                <div class="error-message" id="password-error"></div>
+
+                <input type="password" name="Confirm_Password" placeholder="Confirm Password" required>
+                <div class="error-message" id="confirm-password-error"></div>
+
+                <button type="submit" class="form-button">Sign Up</button>
+            </form>
+            <p>Already have an account? <a asp-controller="Account" asp-action="Login">Login</a></p>
+        </div>
+
+        <div class="image-section">
+            <img src="~/img/5eddcb01-946e-454f-8412-354d066ff945.jpg" class="image-signup" alt="World Youth Skills Day">
+        </div>
+    </main>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const form = document.querySelector("form");
+            const nameInput = form.querySelector("input[name='Name']");
+            const emailInput = form.querySelector("input[name='email']");
+            const pwInput = form.querySelector("input[name='password']");
+            const cpwInput = form.querySelector("input[name='Confirm_Password']");
+            const nameErr = document.getElementById("name-error");
+            const emailErr = document.getElementById("email-error");
+            const pwErr = document.getElementById("password-error");
+            const cpwErr = document.getElementById("confirm-password-error");
+
+            function validateName(name) {
+                return /^[A-Za-z\u0600-\u06FF ]{2,}$/.test(name);
+            }
+            function validateEmail(email) {
+                return /^[^\s@@]+@@[^\s@@]+\.[^\s@@]+$/.test(email);
+            }
+            function validatePassword(pw) {
+                return /^(?=.*[A-Za-z])(?=.*\d)(?=.*[@@$!%*?&])[A-Za-z\d@@$!%*?&]{8,}$/.test(pw);
+            }
+
+            nameInput.addEventListener("input", () => {
+                const v = nameInput.value.trim();
+                nameErr.textContent = v === "" || validateName(v) ? "" : "Name must be >= 2 letters (Arabic or English).";
+            });
+            emailInput.addEventListener("input", () => {
+                const v = emailInput.value.trim();
+                emailErr.textContent = v === "" || validateEmail(v) ? "" : "Please enter a valid email.";
+            });
+            pwInput.addEventListener("input", () => {
+                const v = pwInput.value;
+                pwErr.textContent = v === "" || validatePassword(v) ? "" : "Password must be >= 8 chars, include number & special char.";
+            });
+            cpwInput.addEventListener("input", () => {
+                const v = cpwInput.value;
+                cpwErr.textContent = v === "" || v === pwInput.value ? "" : "Passwords do not match.";
+            });
+
+            form.addEventListener("submit", function (e) {
+                const name = nameInput.value.trim();
+                const email = emailInput.value.trim();
+                const password = pwInput.value;
+                const cpw = cpwInput.value;
+
+                if (!name || !email || !password || !cpw) {
+                    e.preventDefault();
+                    alert("Please fill in all fields.");
+                    return;
+                }
+                if (!validateName(name) || !validateEmail(email) || !validatePassword(password) || password !== cpw) {
+                    e.preventDefault();
+                    alert("Please fix the errors before submitting.");
+                    return;
+                }
+                // بدون preventDefault هنا عشان الفورم يتبعت فعليًا للـ AccountController
+            });
+        });
+    </script>
+</body>
+</html>

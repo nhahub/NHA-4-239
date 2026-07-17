@@ -1,0 +1,285 @@
+﻿@model IEnumerable<Notification>
+@{
+    ViewData["Title"] = "Notifications";
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Notifications</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <link rel="stylesheet" href="~/css/bootstrap.min.css" />
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background-color: #faf6ef;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+        }
+
+        /* ===== Side nav (no hamburger / no collapse) ===== */
+        .ul-nav {
+            list-style: none;
+            color: white;
+            padding: 0;
+        }
+
+            .ul-nav li {
+                padding-block: 7px;
+                cursor: pointer;
+            }
+
+        .rightSide {
+            width: 260px;
+        }
+
+        .side-nav {
+            overflow: hidden;
+            width: 260px;
+        }
+
+        /* ===== Page content, offset for the fixed sidebar ===== */
+        .page-content {
+            margin-left: 260px;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 20px;
+        }
+
+        /* ===== Notification card ===== */
+        .notifications-box {
+            position: relative;
+            background: #ffffff;
+            width: 100%;
+            max-width: 440px;
+            padding: 28px 26px 22px;
+            border-radius: 22px;
+            box-shadow: 0 12px 40px rgba(240, 124, 22, 0.18), 0 2px 8px rgba(0, 0, 0, 0.06);
+            border: 1px solid #f5e3d3;
+            animation: pop-in 0.25s ease;
+        }
+
+        @@keyframes pop-in {
+            from {
+                opacity: 0;
+                transform: translateY(8px) scale(0.98);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
+        }
+
+        /* tiny close button */
+        .close-btn {
+            position: absolute;
+            top: 14px;
+            right: 14px;
+            width: 22px;
+            height: 22px;
+            border-radius: 50%;
+            background: #f4f0eb;
+            color: #a58f7c;
+            border: none;
+            font-size: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            text-decoration: none;
+        }
+
+            .close-btn:hover {
+                background: #f07c16;
+                color: #fff;
+                transform: rotate(90deg);
+            }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 22px;
+            padding-right: 6px;
+        }
+
+            .header h1 {
+                color: #f07c16;
+                font-size: 26px;
+                font-weight: 700;
+                margin: 0;
+                letter-spacing: -0.5px;
+            }
+
+            .header .user-icon {
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                background: linear-gradient(135deg, #f07c16, #ff9d4d);
+                color: white;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 16px;
+                box-shadow: 0 4px 10px rgba(240, 124, 22, 0.35);
+            }
+
+        #notifications-container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            max-height: 380px;
+            overflow-y: auto;
+            padding-right: 2px;
+        }
+
+        .notification {
+            position: relative;
+            display: flex;
+            align-items: center;
+            background-color: #fdf3ec;
+            border-radius: 14px;
+            padding: 13px 16px;
+            transition: transform 0.15s ease, box-shadow 0.15s ease;
+        }
+
+            .notification:hover {
+                transform: translateY(-2px);
+                box-shadow: 0 6px 16px rgba(240, 124, 22, 0.15);
+            }
+
+            .notification .icon {
+                flex-shrink: 0;
+                background: linear-gradient(135deg, #f07c16, #ff9d4d);
+                color: white;
+                border-radius: 50%;
+                width: 34px;
+                height: 34px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-right: 14px;
+                font-size: 14px;
+            }
+
+            .notification .text {
+                flex-grow: 1;
+                text-align: left;
+                font-size: 14px;
+                color: #402c1c;
+                line-height: 1.4;
+            }
+
+            .notification .time {
+                font-size: 11.5px;
+                color: #c98a55;
+                white-space: nowrap;
+                margin-left: 10px;
+            }
+
+        /* empty state */
+        .empty-state {
+            text-align: center;
+            padding: 40px 10px 20px;
+            color: #b9a793;
+        }
+
+            .empty-state i {
+                font-size: 34px;
+                color: #f0c9a2;
+                margin-bottom: 10px;
+                display: block;
+            }
+
+            .empty-state p {
+                margin: 0;
+                font-size: 14px;
+            }
+
+        /* scrollbar polish */
+        #notifications-container::-webkit-scrollbar {
+            width: 5px;
+        }
+
+        #notifications-container::-webkit-scrollbar-thumb {
+            background: #f0c9a2;
+            border-radius: 10px;
+        }
+
+        @@media (max-width: 700px) {
+            .rightSide, .side-nav {
+                width: 0;
+                overflow: hidden;
+            }
+
+            .page-content {
+                margin-left: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="side-nav min-vh-100 d-flex position-fixed z-3 bg-black">
+        <div class="rightSide d-flex flex-column justify-content-between min-vh-100 p-4">
+            <div>
+                <ul class="ul-nav">
+                    <li><a class="nav-link text-light b-hover" asp-controller="Dashboard" asp-action="Index">Home</a></li>
+                    <li><a class="nav-link text-light b-hover" asp-controller="Services" asp-action="MyServices">my services</a></li>
+                    <li><a class="nav-link text-light b-hover" asp-controller="Services" asp-action="Browse">Browse Services</a></li>
+                    <li><a class="nav-link text-light b-hover" asp-controller="Dashboard" asp-action="Profile">my profile</a></li>
+                    <li><a class="nav-link text-light b-hover" asp-controller="TimeBank" asp-action="PurchaseHours">purchase hours</a></li>
+                </ul>
+            </div>
+            <div class="social-media text-white">
+                <i class="fa-brands fa-facebook pb-2"></i>
+                <i class="fa-brands fa-twitter pb-2"></i>
+                <i class="fa-solid fa-globe pb-2"></i>
+                <footer class="text-white">Copyright &copy; 2026 All Rights Reserved.</footer>
+            </div>
+        </div>
+    </div>
+
+    <div class="page-content">
+        <div class="notifications-box">
+            <a class="close-btn" href="javascript:void(0)" onclick="history.length > 1 ? history.back() : window.location.href='@Url.Action("Index", "Dashboard")'" title="Close">
+                <i class="fa-solid fa-xmark"></i>
+            </a>
+
+            <div class="header">
+                <h1>Notifications</h1>
+                <div class="user-icon"><i class="fas fa-user"></i></div>
+            </div>
+
+            <div id="notifications-container">
+                @if (Model != null && Model.Any())
+                {
+                    foreach (var n in Model)
+                    {
+                        <div class="notification">
+                            <div class="icon"><i class="fas fa-bell"></i></div>
+                            <div class="text">@n.Message</div>
+                            <div class="time">@n.CreatedAt.ToString("dd MMM, HH:mm")</div>
+                        </div>
+                    }
+                }
+                else
+                {
+                    <div class="empty-state">
+                        <i class="fa-regular fa-bell-slash"></i>
+                        <p>No notifications yet</p>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</body>
+</html>

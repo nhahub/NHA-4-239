@@ -1,0 +1,146 @@
+@{
+    ViewData["Title"] = "Contact Us";
+}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css
+
+
+
+"
+    />
+    <link rel="stylesheet" href="~/css/contact.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="~/css/bootstrap.min.css" />
+    <script src="~/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div class="side-nav min-vh-100 d-flex position-fixed z-3 bg-black">
+      <div
+        class="rightSide d-flex flex-column justify-content-between min-vh-100 p-4"
+      >
+        <div>
+          <ul class="ul-nav">
+            <li class="pt-4">
+              <a class="nav-link text-light b-hover" asp-controller="Home" asp-action="Index">home</a>
+            </li>
+            <li class="pt-4">
+              <a class="nav-link text-light b-hover" asp-controller="Services" asp-action="MyServices"
+                >my services</a >
+            </li>
+            <li>
+              <a class="nav-link text-light b-hover" asp-controller="Dashboard" asp-action="Notifications"
+                >notification</a>
+            </li>
+            <li>
+              <a class="nav-link text light  b-hover" asp-controller="Dashboard" asp-action="Index">dashboard</a>
+            </li>
+            <li>
+              <a class="nav-link text light b-hove" asp-controller="TimeBank" asp-action="PurchaseHours"
+                >purshace hours</a >
+            </li>
+            <li>
+              <a class="nav-link text light b-hover" asp-controller="Chat" asp-action="Index">send notes </a>
+            </li>
+            <li>
+              <a class="nav-link text light b-hover" asp-controller="Services" asp-action="QuickLearning"
+                >quick learning
+              </a>
+            </li>
+            <li>
+              <a class="nav-link text light b-hover top-0" asp-controller="Account" asp-action="Login">login </a>
+            </li>
+            <li>
+              <a class="nav-link text light b-hover top-0" asp-controller="Account" asp-action="SignUp"
+                >sign up
+              </a>
+            </li>
+            <li>
+              <a class="nav-link b-hover top-0" asp-controller="Services" asp-action="Browse"
+                >browse services
+              </a>
+            </li>
+            <li>
+              <a class="nav-link b-hover top-0" asp-controller="Dashboard" asp-action="Profile"
+                >profile
+              </a>
+            </li>
+            <li>
+              <a class="nav-link b-hover top-0" asp-controller="Home" asp-action="Contact"
+                >contact us
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="social-media text-white">
+          <i class="fa-brands fa-facebook pb-2"></i>
+          <i class="fa-brands fa-twitter pb-2"></i>
+          <i class="fa-solid fa-globe pb-2"></i>
+          <footer class="text-white">
+            Copyright Â© 2019 All Rights Reserved.
+          </footer>
+        </div>
+      </div>
+      <div
+        class="leftSide bg-white p-2 pt-4 text-black d-flex flex-column justify-content-between text-center"
+      >
+        <i class="fa-solid fa-bars manue-i"></i>
+        <div class="b-icons">
+          <i class="fa-solid fa-globe d-block pb-2"></i>
+          <i class="fa-solid fa-share-nodes"></i>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="contact-section">
+        <div class="contact-form">
+          <h1>Contact Us</h1>
+          <p>
+            Feel free to contact us at any time. We will get back to you as soon
+            as we can.
+          </p>
+          @if (TempData["SuccessMessage"] != null)
+          {
+              <div class="alert alert-success">@TempData["SuccessMessage"]</div>
+          }
+          <form id="contactForm" asp-controller="Home" asp-action="Contact" method="post">
+            <input type="text" id="name" name="name" placeholder="Name" required />
+            <input type="email" id="email" name="email" placeholder="Email" required />
+            <textarea id="message" name="message" placeholder="Message" required></textarea>
+            <button type="submit">Send</button>
+          </form>
+        </div>
+        <div class="contact-info">
+          <h2>Info</h2>
+          <div class="info-item">
+            <i class="fas fa-envelope"></i>
+            <p>info@gmail.com</p>
+          </div>
+          <div class="info-item">
+            <i class="fas fa-phone"></i>
+            <p>+03 123456</p>
+          </div>
+          <div class="info-item">
+            <i class="fab fa-whatsapp"></i>
+            <p>+20 1273370343</p>
+          </div>
+          <div class="info-item">
+            <i class="fas fa-calendar-alt"></i>
+            <p>Sunday-Thursday</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="~/js/jquery-3.7.1.min.js"></script>
+<script src="~/js/contact.js"></script>  </body>
+</html>

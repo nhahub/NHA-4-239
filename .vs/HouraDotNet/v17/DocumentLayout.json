@@ -1,0 +1,666 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Mega Store\\source\\repos\\HouraDotNet\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{CE02EED0-CD07-493E-BED9-587B67CA5BF2}|HouraDotNet\\HouraPL.csproj|c:\\users\\mega store\\source\\repos\\houradotnet\\houradotnet\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE02EED0-CD07-493E-BED9-587B67CA5BF2}|HouraDotNet\\HouraPL.csproj|solutionrelative:houradotnet\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE02EED0-CD07-493E-BED9-587B67CA5BF2}|HouraDotNet\\HouraPL.csproj|c:\\users\\mega store\\source\\repos\\houradotnet\\houradotnet\\views\\services\\myservices.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CE02EED0-CD07-493E-BED9-587B67CA5BF2}|HouraDotNet\\HouraPL.csproj|solutionrelative:houradotnet\\views\\services\\myservices.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE02EED0-CD07-493E-BED9-587B67CA5BF2}|HouraDotNet\\HouraPL.csproj|c:\\users\\mega store\\source\\repos\\houradotnet\\houradotnet\\views\\timebank\\purchasehours.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CE02EED0-CD07-493E-BED9-587B67CA5BF2}|HouraDotNet\\HouraPL.csproj|solutionrelative:houradotnet\\views\\timebank\\purchasehours.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE02EED0-CD07-493E-BED9-587B67CA5BF2}|HouraDotNet\\HouraPL.csproj|c:\\users\\mega store\\source\\repos\\houradotnet\\houradotnet\\views\\dashboard\\notifications.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CE02EED0-CD07-493E-BED9-587B67CA5BF2}|HouraDotNet\\HouraPL.csproj|solutionrelative:houradotnet\\views\\dashboard\\notifications.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE02EED0-CD07-493E-BED9-587B67CA5BF2}|HouraDotNet\\HouraPL.csproj|c:\\users\\mega store\\source\\repos\\houradotnet\\houradotnet\\wwwroot\\js\\notification.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{CE02EED0-CD07-493E-BED9-587B67CA5BF2}|HouraDotNet\\HouraPL.csproj|solutionrelative:houradotnet\\wwwroot\\js\\notification.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Mega Store\\source\\repos\\HouraDotNet\\HouraDAL\\Migrations\\20260709191521_seed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:HouraDAL\\Migrations\\20260709191521_seed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACD2C56E-71AC-47FB-930C-B1251704ECEC}|HouraDAL\\HouraDAL.csproj|c:\\users\\mega store\\source\\repos\\houradotnet\\houradal\\data\\dbcontexts\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACD2C56E-71AC-47FB-930C-B1251704ECEC}|HouraDAL\\HouraDAL.csproj|solutionrelative:houradal\\data\\dbcontexts\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Mega Store\\source\\repos\\HouraDotNet\\HouraDAL\\Migrations\\20260708203632_newedit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:HouraDAL\\Migrations\\20260708203632_newedit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACD2C56E-71AC-47FB-930C-B1251704ECEC}|HouraDAL\\HouraDAL.csproj|c:\\users\\mega store\\source\\repos\\houradotnet\\houradal\\repository\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACD2C56E-71AC-47FB-930C-B1251704ECEC}|HouraDAL\\HouraDAL.csproj|solutionrelative:houradal\\repository\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACD2C56E-71AC-47FB-930C-B1251704ECEC}|HouraDAL\\HouraDAL.csproj|c:\\users\\mega store\\source\\repos\\houradotnet\\houradal\\repository\\contracts\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACD2C56E-71AC-47FB-930C-B1251704ECEC}|HouraDAL\\HouraDAL.csproj|solutionrelative:houradal\\repository\\contracts\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE02EED0-CD07-493E-BED9-587B67CA5BF2}|HouraDotNet\\HouraPL.csproj|c:\\users\\mega store\\source\\repos\\houradotnet\\houradotnet\\controllers\\servicescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE02EED0-CD07-493E-BED9-587B67CA5BF2}|HouraDotNet\\HouraPL.csproj|solutionrelative:houradotnet\\controllers\\servicescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACD2C56E-71AC-47FB-930C-B1251704ECEC}|HouraDAL\\HouraDAL.csproj|c:\\users\\mega store\\source\\repos\\houradotnet\\houradal\\migrations\\20260704123753_addnotificationstableeee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACD2C56E-71AC-47FB-930C-B1251704ECEC}|HouraDAL\\HouraDAL.csproj|solutionrelative:houradal\\migrations\\20260704123753_addnotificationstableeee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACD2C56E-71AC-47FB-930C-B1251704ECEC}|HouraDAL\\HouraDAL.csproj|c:\\users\\mega store\\source\\repos\\houradotnet\\houradal\\entities\\notification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACD2C56E-71AC-47FB-930C-B1251704ECEC}|HouraDAL\\HouraDAL.csproj|solutionrelative:houradal\\entities\\notification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE02EED0-CD07-493E-BED9-587B67CA5BF2}|HouraDotNet\\HouraPL.csproj|c:\\users\\mega store\\source\\repos\\houradotnet\\houradotnet\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{CE02EED0-CD07-493E-BED9-587B67CA5BF2}|HouraDotNet\\HouraPL.csproj|solutionrelative:houradotnet\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE02EED0-CD07-493E-BED9-587B67CA5BF2}|HouraDotNet\\HouraPL.csproj|c:\\users\\mega store\\source\\repos\\houradotnet\\houradotnet\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CE02EED0-CD07-493E-BED9-587B67CA5BF2}|HouraDotNet\\HouraPL.csproj|solutionrelative:houradotnet\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE02EED0-CD07-493E-BED9-587B67CA5BF2}|HouraDotNet\\HouraPL.csproj|c:\\users\\mega store\\source\\repos\\houradotnet\\houradotnet\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE02EED0-CD07-493E-BED9-587B67CA5BF2}|HouraDotNet\\HouraPL.csproj|solutionrelative:houradotnet\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE02EED0-CD07-493E-BED9-587B67CA5BF2}|HouraDotNet\\HouraPL.csproj|c:\\users\\mega store\\source\\repos\\houradotnet\\houradotnet\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE02EED0-CD07-493E-BED9-587B67CA5BF2}|HouraDotNet\\HouraPL.csproj|solutionrelative:houradotnet\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE02EED0-CD07-493E-BED9-587B67CA5BF2}|HouraDotNet\\HouraPL.csproj|c:\\users\\mega store\\source\\repos\\houradotnet\\houradotnet\\views\\dashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CE02EED0-CD07-493E-BED9-587B67CA5BF2}|HouraDotNet\\HouraPL.csproj|solutionrelative:houradotnet\\views\\dashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE02EED0-CD07-493E-BED9-587B67CA5BF2}|HouraDotNet\\HouraPL.csproj|c:\\users\\mega store\\source\\repos\\houradotnet\\houradotnet\\views\\services\\quicklearning.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CE02EED0-CD07-493E-BED9-587B67CA5BF2}|HouraDotNet\\HouraPL.csproj|solutionrelative:houradotnet\\views\\services\\quicklearning.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE02EED0-CD07-493E-BED9-587B67CA5BF2}|HouraDotNet\\HouraPL.csproj|c:\\users\\mega store\\source\\repos\\houradotnet\\houradotnet\\views\\home\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CE02EED0-CD07-493E-BED9-587B67CA5BF2}|HouraDotNet\\HouraPL.csproj|solutionrelative:houradotnet\\views\\home\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE02EED0-CD07-493E-BED9-587B67CA5BF2}|HouraDotNet\\HouraPL.csproj|c:\\users\\mega store\\source\\repos\\houradotnet\\houradotnet\\views\\home\\feedback.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CE02EED0-CD07-493E-BED9-587B67CA5BF2}|HouraDotNet\\HouraPL.csproj|solutionrelative:houradotnet\\views\\home\\feedback.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE02EED0-CD07-493E-BED9-587B67CA5BF2}|HouraDotNet\\HouraPL.csproj|c:\\users\\mega store\\source\\repos\\houradotnet\\houradotnet\\views\\home\\faq.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CE02EED0-CD07-493E-BED9-587B67CA5BF2}|HouraDotNet\\HouraPL.csproj|solutionrelative:houradotnet\\views\\home\\faq.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE02EED0-CD07-493E-BED9-587B67CA5BF2}|HouraDotNet\\HouraPL.csproj|c:\\users\\mega store\\source\\repos\\houradotnet\\houradotnet\\controllers\\chatcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE02EED0-CD07-493E-BED9-587B67CA5BF2}|HouraDotNet\\HouraPL.csproj|solutionrelative:houradotnet\\controllers\\chatcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE02EED0-CD07-493E-BED9-587B67CA5BF2}|HouraDotNet\\HouraPL.csproj|c:\\users\\mega store\\source\\repos\\houradotnet\\houradotnet\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CE02EED0-CD07-493E-BED9-587B67CA5BF2}|HouraDotNet\\HouraPL.csproj|solutionrelative:houradotnet\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE02EED0-CD07-493E-BED9-587B67CA5BF2}|HouraDotNet\\HouraPL.csproj|c:\\users\\mega store\\source\\repos\\houradotnet\\houradotnet\\views\\services\\browse.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CE02EED0-CD07-493E-BED9-587B67CA5BF2}|HouraDotNet\\HouraPL.csproj|solutionrelative:houradotnet\\views\\services\\browse.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE02EED0-CD07-493E-BED9-587B67CA5BF2}|HouraDotNet\\HouraPL.csproj|c:\\users\\mega store\\source\\repos\\houradotnet\\houradotnet\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CE02EED0-CD07-493E-BED9-587B67CA5BF2}|HouraDotNet\\HouraPL.csproj|solutionrelative:houradotnet\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE02EED0-CD07-493E-BED9-587B67CA5BF2}|HouraDotNet\\HouraPL.csproj|c:\\users\\mega store\\source\\repos\\houradotnet\\houradotnet\\views\\account\\signup.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CE02EED0-CD07-493E-BED9-587B67CA5BF2}|HouraDotNet\\HouraPL.csproj|solutionrelative:houradotnet\\views\\account\\signup.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE02EED0-CD07-493E-BED9-587B67CA5BF2}|HouraDotNet\\HouraPL.csproj|c:\\users\\mega store\\source\\repos\\houradotnet\\houradotnet\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CE02EED0-CD07-493E-BED9-587B67CA5BF2}|HouraDotNet\\HouraPL.csproj|solutionrelative:houradotnet\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACD2C56E-71AC-47FB-930C-B1251704ECEC}|HouraDAL\\HouraDAL.csproj|c:\\users\\mega store\\source\\repos\\houradotnet\\houradal\\migrations\\20260703193827_initialtimebankdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACD2C56E-71AC-47FB-930C-B1251704ECEC}|HouraDAL\\HouraDAL.csproj|solutionrelative:houradal\\migrations\\20260703193827_initialtimebankdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE02EED0-CD07-493E-BED9-587B67CA5BF2}|HouraDotNet\\HouraPL.csproj|c:\\users\\mega store\\source\\repos\\houradotnet\\houradotnet\\controllers\\timebankcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE02EED0-CD07-493E-BED9-587B67CA5BF2}|HouraDotNet\\HouraPL.csproj|solutionrelative:houradotnet\\controllers\\timebankcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE02EED0-CD07-493E-BED9-587B67CA5BF2}|HouraDotNet\\HouraPL.csproj|c:\\users\\mega store\\source\\repos\\houradotnet\\houradotnet\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE02EED0-CD07-493E-BED9-587B67CA5BF2}|HouraDotNet\\HouraPL.csproj|solutionrelative:houradotnet\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9833F80F-50A1-44B9-85ED-16B30B98ECDA}|HouraBLL\\HouraBLL.csproj|c:\\users\\mega store\\source\\repos\\houradotnet\\hourabll\\service\\servicepostingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9833F80F-50A1-44B9-85ED-16B30B98ECDA}|HouraBLL\\HouraBLL.csproj|solutionrelative:hourabll\\service\\servicepostingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9833F80F-50A1-44B9-85ED-16B30B98ECDA}|HouraBLL\\HouraBLL.csproj|c:\\users\\mega store\\source\\repos\\houradotnet\\hourabll\\service\\contracts\\iservicepostingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9833F80F-50A1-44B9-85ED-16B30B98ECDA}|HouraBLL\\HouraBLL.csproj|solutionrelative:hourabll\\service\\contracts\\iservicepostingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9833F80F-50A1-44B9-85ED-16B30B98ECDA}|HouraBLL\\HouraBLL.csproj|c:\\users\\mega store\\source\\repos\\houradotnet\\hourabll\\service\\postapplicationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9833F80F-50A1-44B9-85ED-16B30B98ECDA}|HouraBLL\\HouraBLL.csproj|solutionrelative:hourabll\\service\\postapplicationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACD2C56E-71AC-47FB-930C-B1251704ECEC}|HouraDAL\\HouraDAL.csproj|c:\\users\\mega store\\source\\repos\\houradotnet\\houradal\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACD2C56E-71AC-47FB-930C-B1251704ECEC}|HouraDAL\\HouraDAL.csproj|solutionrelative:houradal\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9833F80F-50A1-44B9-85ED-16B30B98ECDA}|HouraBLL\\HouraBLL.csproj|c:\\users\\mega store\\source\\repos\\houradotnet\\hourabll\\service\\reviewservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9833F80F-50A1-44B9-85ED-16B30B98ECDA}|HouraBLL\\HouraBLL.csproj|solutionrelative:hourabll\\service\\reviewservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACD2C56E-71AC-47FB-930C-B1251704ECEC}|HouraDAL\\HouraDAL.csproj|c:\\users\\mega store\\source\\repos\\houradotnet\\houradal\\repository\\contracts\\igenericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACD2C56E-71AC-47FB-930C-B1251704ECEC}|HouraDAL\\HouraDAL.csproj|solutionrelative:houradal\\repository\\contracts\\igenericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9833F80F-50A1-44B9-85ED-16B30B98ECDA}|HouraBLL\\HouraBLL.csproj|c:\\users\\mega store\\source\\repos\\houradotnet\\hourabll\\service\\contracts\\itimebankservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9833F80F-50A1-44B9-85ED-16B30B98ECDA}|HouraBLL\\HouraBLL.csproj|solutionrelative:hourabll\\service\\contracts\\itimebankservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACD2C56E-71AC-47FB-930C-B1251704ECEC}|HouraDAL\\HouraDAL.csproj|c:\\users\\mega store\\source\\repos\\houradotnet\\houradal\\migrations\\20260703191644_edit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACD2C56E-71AC-47FB-930C-B1251704ECEC}|HouraDAL\\HouraDAL.csproj|solutionrelative:houradal\\migrations\\20260703191644_edit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "notification.js",
+              "DocumentMoniker": "C:\\Users\\Mega Store\\source\\repos\\HouraDotNet\\HouraDotNet\\wwwroot\\js\\notification.js",
+              "RelativeDocumentMoniker": "HouraDotNet\\wwwroot\\js\\notification.js",
+              "ToolTip": "C:\\Users\\Mega Store\\source\\repos\\HouraDotNet\\HouraDotNet\\wwwroot\\js\\notification.js",
+              "RelativeToolTip": "HouraDotNet\\wwwroot\\js\\notification.js",
+              "ViewState": "AgIAACMAAAAAAAAAAAAiwFwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2026-07-09T19:27:38.04Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Notifications.cshtml",
+              "DocumentMoniker": "C:\\Users\\Mega Store\\source\\repos\\HouraDotNet\\HouraDotNet\\Views\\Dashboard\\Notifications.cshtml",
+              "RelativeDocumentMoniker": "HouraDotNet\\Views\\Dashboard\\Notifications.cshtml",
+              "ToolTip": "C:\\Users\\Mega Store\\source\\repos\\HouraDotNet\\HouraDotNet\\Views\\Dashboard\\Notifications.cshtml",
+              "RelativeToolTip": "HouraDotNet\\Views\\Dashboard\\Notifications.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0BAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-03T19:28:48.098Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PurchaseHours.cshtml",
+              "DocumentMoniker": "C:\\Users\\Mega Store\\source\\repos\\HouraDotNet\\HouraDotNet\\Views\\TimeBank\\PurchaseHours.cshtml",
+              "RelativeDocumentMoniker": "HouraDotNet\\Views\\TimeBank\\PurchaseHours.cshtml",
+              "ToolTip": "C:\\Users\\Mega Store\\source\\repos\\HouraDotNet\\HouraDotNet\\Views\\TimeBank\\PurchaseHours.cshtml",
+              "RelativeToolTip": "HouraDotNet\\Views\\TimeBank\\PurchaseHours.cshtml",
+              "ViewState": "AgIAAJgAAAAAAAAAAAAwwKkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-03T19:28:06.95Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MyServices.cshtml",
+              "DocumentMoniker": "C:\\Users\\Mega Store\\source\\repos\\HouraDotNet\\HouraDotNet\\Views\\Services\\MyServices.cshtml",
+              "RelativeDocumentMoniker": "HouraDotNet\\Views\\Services\\MyServices.cshtml",
+              "ToolTip": "C:\\Users\\Mega Store\\source\\repos\\HouraDotNet\\HouraDotNet\\Views\\Services\\MyServices.cshtml",
+              "RelativeToolTip": "HouraDotNet\\Views\\Services\\MyServices.cshtml",
+              "ViewState": "AgIAAHsAAAAAAAAAAAAwwIwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-03T20:13:04.87Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DashboardController.cs",
+              "DocumentMoniker": "C:\\Users\\Mega Store\\source\\repos\\HouraDotNet\\HouraDotNet\\Controllers\\DashboardController.cs",
+              "RelativeDocumentMoniker": "HouraDotNet\\Controllers\\DashboardController.cs",
+              "ToolTip": "C:\\Users\\Mega Store\\source\\repos\\HouraDotNet\\HouraDotNet\\Controllers\\DashboardController.cs",
+              "RelativeToolTip": "HouraDotNet\\Controllers\\DashboardController.cs",
+              "ViewState": "AgIAAG4AAAAAAAAAAAAwwH8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-03T19:19:47.148Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "20260709191521_seed.cs",
+              "DocumentMoniker": "C:\\Users\\Mega Store\\source\\repos\\HouraDotNet\\HouraDAL\\Migrations\\20260709191521_seed.cs",
+              "RelativeDocumentMoniker": "HouraDAL\\Migrations\\20260709191521_seed.cs",
+              "ToolTip": "C:\\Users\\Mega Store\\source\\repos\\HouraDotNet\\HouraDAL\\Migrations\\20260709191521_seed.cs",
+              "RelativeToolTip": "HouraDAL\\Migrations\\20260709191521_seed.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-09T19:15:21.288Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "20260708203632_newedit.cs",
+              "DocumentMoniker": "C:\\Users\\Mega Store\\source\\repos\\HouraDotNet\\HouraDAL\\Migrations\\20260708203632_newedit.cs",
+              "RelativeDocumentMoniker": "HouraDAL\\Migrations\\20260708203632_newedit.cs",
+              "ToolTip": "C:\\Users\\Mega Store\\source\\repos\\HouraDotNet\\HouraDAL\\Migrations\\20260708203632_newedit.cs",
+              "RelativeToolTip": "HouraDAL\\Migrations\\20260708203632_newedit.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-08T20:36:33.108Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "UnitOfWork.cs",
+              "DocumentMoniker": "C:\\Users\\Mega Store\\source\\repos\\HouraDotNet\\HouraDAL\\Repository\\UnitOfWork.cs",
+              "RelativeDocumentMoniker": "HouraDAL\\Repository\\UnitOfWork.cs",
+              "ToolTip": "C:\\Users\\Mega Store\\source\\repos\\HouraDotNet\\HouraDAL\\Repository\\UnitOfWork.cs",
+              "RelativeToolTip": "HouraDAL\\Repository\\UnitOfWork.cs",
+              "ViewState": "AgIAADwAAAAAAAAAAAAuwEgAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-03T12:13:54.884Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "IUnitOfWork.cs",
+              "DocumentMoniker": "C:\\Users\\Mega Store\\source\\repos\\HouraDotNet\\HouraDAL\\Repository\\Contracts\\IUnitOfWork.cs",
+              "RelativeDocumentMoniker": "HouraDAL\\Repository\\Contracts\\IUnitOfWork.cs",
+              "ToolTip": "C:\\Users\\Mega Store\\source\\repos\\HouraDotNet\\HouraDAL\\Repository\\Contracts\\IUnitOfWork.cs",
+              "RelativeToolTip": "HouraDAL\\Repository\\Contracts\\IUnitOfWork.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAADwvxwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-03T12:13:31.686Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Mega Store\\source\\repos\\HouraDotNet\\HouraDAL\\Data\\DbContexts\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "HouraDAL\\Data\\DbContexts\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\Mega Store\\source\\repos\\HouraDotNet\\HouraDAL\\Data\\DbContexts\\ApplicationDbContext.cs",
+              "RelativeToolTip": "HouraDAL\\Data\\DbContexts\\ApplicationDbContext.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAAwwD0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-03T19:07:59.882Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ServicesController.cs",
+              "DocumentMoniker": "C:\\Users\\Mega Store\\source\\repos\\HouraDotNet\\HouraDotNet\\Controllers\\ServicesController.cs",
+              "RelativeDocumentMoniker": "HouraDotNet\\Controllers\\ServicesController.cs",
+              "ToolTip": "C:\\Users\\Mega Store\\source\\repos\\HouraDotNet\\HouraDotNet\\Controllers\\ServicesController.cs",
+              "RelativeToolTip": "HouraDotNet\\Controllers\\ServicesController.cs",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAswGUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-03T19:20:27.667Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "20260704123753_AddNotificationsTableeee.cs",
+              "DocumentMoniker": "C:\\Users\\Mega Store\\source\\repos\\HouraDotNet\\HouraDAL\\Migrations\\20260704123753_AddNotificationsTableeee.cs",
+              "RelativeDocumentMoniker": "HouraDAL\\Migrations\\20260704123753_AddNotificationsTableeee.cs",
+              "ToolTip": "C:\\Users\\Mega Store\\source\\repos\\HouraDotNet\\HouraDAL\\Migrations\\20260704123753_AddNotificationsTableeee.cs",
+              "RelativeToolTip": "HouraDAL\\Migrations\\20260704123753_AddNotificationsTableeee.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-04T12:37:53.638Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Notification.cs",
+              "DocumentMoniker": "C:\\Users\\Mega Store\\source\\repos\\HouraDotNet\\HouraDAL\\Entities\\Notification.cs",
+              "RelativeDocumentMoniker": "HouraDAL\\Entities\\Notification.cs",
+              "ToolTip": "C:\\Users\\Mega Store\\source\\repos\\HouraDotNet\\HouraDAL\\Entities\\Notification.cs",
+              "RelativeToolTip": "HouraDAL\\Entities\\Notification.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAIwA0AAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-03T19:10:08.555Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Mega Store\\source\\repos\\HouraDotNet\\HouraDotNet\\appsettings.json",
+              "RelativeDocumentMoniker": "HouraDotNet\\appsettings.json",
+              "ToolTip": "C:\\Users\\Mega Store\\source\\repos\\HouraDotNet\\HouraDotNet\\appsettings.json",
+              "RelativeToolTip": "HouraDotNet\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-07-03T19:37:43.699Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Mega Store\\source\\repos\\HouraDotNet\\HouraDotNet\\Program.cs",
+              "RelativeDocumentMoniker": "HouraDotNet\\Program.cs",
+              "ToolTip": "C:\\Users\\Mega Store\\source\\repos\\HouraDotNet\\HouraDotNet\\Program.cs",
+              "RelativeToolTip": "HouraDotNet\\Program.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAqwEQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-03T11:41:38.349Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Mega Store\\source\\repos\\HouraDotNet\\HouraDotNet\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "HouraDotNet\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Mega Store\\source\\repos\\HouraDotNet\\HouraDotNet\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "HouraDotNet\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAKsAAAAAAAAAAAAqwLgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-03T19:29:41.457Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\Mega Store\\source\\repos\\HouraDotNet\\HouraDotNet\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "HouraDotNet\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\Mega Store\\source\\repos\\HouraDotNet\\HouraDotNet\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "HouraDotNet\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-04T12:06:50.778Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Mega Store\\source\\repos\\HouraDotNet\\HouraDotNet\\Views\\Dashboard\\index.cshtml",
+              "RelativeDocumentMoniker": "HouraDotNet\\Views\\Dashboard\\index.cshtml",
+              "ToolTip": "C:\\Users\\Mega Store\\source\\repos\\HouraDotNet\\HouraDotNet\\Views\\Dashboard\\index.cshtml",
+              "RelativeToolTip": "HouraDotNet\\Views\\Dashboard\\index.cshtml",
+              "ViewState": "AgIAAO0AAAAAAAAAAAAqwP0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-04T11:16:33.286Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "QuickLearning.cshtml",
+              "DocumentMoniker": "C:\\Users\\Mega Store\\source\\repos\\HouraDotNet\\HouraDotNet\\Views\\Services\\QuickLearning.cshtml",
+              "RelativeDocumentMoniker": "HouraDotNet\\Views\\Services\\QuickLearning.cshtml",
+              "ToolTip": "C:\\Users\\Mega Store\\source\\repos\\HouraDotNet\\HouraDotNet\\Views\\Services\\QuickLearning.cshtml",
+              "RelativeToolTip": "HouraDotNet\\Views\\Services\\QuickLearning.cshtml",
+              "ViewState": "AgIAAPkAAAAAAAAAAAAawAQBAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-04T11:09:56.774Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Contact.cshtml",
+              "DocumentMoniker": "C:\\Users\\Mega Store\\source\\repos\\HouraDotNet\\HouraDotNet\\Views\\Home\\Contact.cshtml",
+              "RelativeDocumentMoniker": "HouraDotNet\\Views\\Home\\Contact.cshtml",
+              "ToolTip": "C:\\Users\\Mega Store\\source\\repos\\HouraDotNet\\HouraDotNet\\Views\\Home\\Contact.cshtml",
+              "RelativeToolTip": "HouraDotNet\\Views\\Home\\Contact.cshtml",
+              "ViewState": "AgIAACMAAAAAAAAAAAAawDAAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-04T11:09:06.424Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Feedback.cshtml",
+              "DocumentMoniker": "C:\\Users\\Mega Store\\source\\repos\\HouraDotNet\\HouraDotNet\\Views\\Home\\Feedback.cshtml",
+              "RelativeDocumentMoniker": "HouraDotNet\\Views\\Home\\Feedback.cshtml",
+              "ToolTip": "C:\\Users\\Mega Store\\source\\repos\\HouraDotNet\\HouraDotNet\\Views\\Home\\Feedback.cshtml",
+              "RelativeToolTip": "HouraDotNet\\Views\\Home\\Feedback.cshtml",
+              "ViewState": "AgIAAAUBAAAAAAAAAAAawAoBAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-04T11:09:50.019Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Faq.cshtml",
+              "DocumentMoniker": "C:\\Users\\Mega Store\\source\\repos\\HouraDotNet\\HouraDotNet\\Views\\Home\\Faq.cshtml",
+              "RelativeDocumentMoniker": "HouraDotNet\\Views\\Home\\Faq.cshtml",
+              "ToolTip": "C:\\Users\\Mega Store\\source\\repos\\HouraDotNet\\HouraDotNet\\Views\\Home\\Faq.cshtml",
+              "RelativeToolTip": "HouraDotNet\\Views\\Home\\Faq.cshtml",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAawDEAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-04T11:09:10.005Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "ChatController.cs",
+              "DocumentMoniker": "C:\\Users\\Mega Store\\source\\repos\\HouraDotNet\\HouraDotNet\\Controllers\\ChatController.cs",
+              "RelativeDocumentMoniker": "HouraDotNet\\Controllers\\ChatController.cs",
+              "ToolTip": "C:\\Users\\Mega Store\\source\\repos\\HouraDotNet\\HouraDotNet\\Controllers\\ChatController.cs",
+              "RelativeToolTip": "HouraDotNet\\Controllers\\ChatController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-04T11:07:35.256Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\Users\\Mega Store\\source\\repos\\HouraDotNet\\HouraDotNet\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "HouraDotNet\\Views\\_ViewImports.cshtml",
+              "ToolTip": "C:\\Users\\Mega Store\\source\\repos\\HouraDotNet\\HouraDotNet\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "HouraDotNet\\Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-03T20:15:52.876Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Browse.cshtml",
+              "DocumentMoniker": "C:\\Users\\Mega Store\\source\\repos\\HouraDotNet\\HouraDotNet\\Views\\Services\\Browse.cshtml",
+              "RelativeDocumentMoniker": "HouraDotNet\\Views\\Services\\Browse.cshtml",
+              "ToolTip": "C:\\Users\\Mega Store\\source\\repos\\HouraDotNet\\HouraDotNet\\Views\\Services\\Browse.cshtml",
+              "RelativeToolTip": "HouraDotNet\\Views\\Services\\Browse.cshtml",
+              "ViewState": "AgIAAGkAAAAAAAAAAAAqwIEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-03T19:27:32.625Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "C:\\Users\\Mega Store\\source\\repos\\HouraDotNet\\HouraDotNet\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "HouraDotNet\\Views\\_ViewStart.cshtml",
+              "ToolTip": "C:\\Users\\Mega Store\\source\\repos\\HouraDotNet\\HouraDotNet\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "HouraDotNet\\Views\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-03T20:15:54.46Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "SignUp.cshtml",
+              "DocumentMoniker": "C:\\Users\\Mega Store\\source\\repos\\HouraDotNet\\HouraDotNet\\Views\\Account\\SignUp.cshtml",
+              "RelativeDocumentMoniker": "HouraDotNet\\Views\\Account\\SignUp.cshtml",
+              "ToolTip": "C:\\Users\\Mega Store\\source\\repos\\HouraDotNet\\HouraDotNet\\Views\\Account\\SignUp.cshtml",
+              "RelativeToolTip": "HouraDotNet\\Views\\Account\\SignUp.cshtml",
+              "ViewState": "AgIAAHIAAAAAAAAAAAAIwIEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-03T19:46:37.388Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\Mega Store\\source\\repos\\HouraDotNet\\HouraDotNet\\Views\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "HouraDotNet\\Views\\Account\\Login.cshtml",
+              "ToolTip": "C:\\Users\\Mega Store\\source\\repos\\HouraDotNet\\HouraDotNet\\Views\\Account\\Login.cshtml",
+              "RelativeToolTip": "HouraDotNet\\Views\\Account\\Login.cshtml",
+              "ViewState": "AgIAAFQAAAAAAAAAAAAIwGYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-03T19:46:04.529Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "20260703193827_InitialTimeBankDb.cs",
+              "DocumentMoniker": "C:\\Users\\Mega Store\\source\\repos\\HouraDotNet\\HouraDAL\\Migrations\\20260703193827_InitialTimeBankDb.cs",
+              "RelativeDocumentMoniker": "HouraDAL\\Migrations\\20260703193827_InitialTimeBankDb.cs",
+              "ToolTip": "C:\\Users\\Mega Store\\source\\repos\\HouraDotNet\\HouraDAL\\Migrations\\20260703193827_InitialTimeBankDb.cs",
+              "RelativeToolTip": "HouraDAL\\Migrations\\20260703193827_InitialTimeBankDb.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-03T19:38:28.076Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "TimeBankController.cs",
+              "DocumentMoniker": "C:\\Users\\Mega Store\\source\\repos\\HouraDotNet\\HouraDotNet\\Controllers\\TimeBankController.cs",
+              "RelativeDocumentMoniker": "HouraDotNet\\Controllers\\TimeBankController.cs",
+              "ToolTip": "C:\\Users\\Mega Store\\source\\repos\\HouraDotNet\\HouraDotNet\\Controllers\\TimeBankController.cs",
+              "RelativeToolTip": "HouraDotNet\\Controllers\\TimeBankController.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAuwAAAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-03T19:21:37.178Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\Mega Store\\source\\repos\\HouraDotNet\\HouraDotNet\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "HouraDotNet\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\Mega Store\\source\\repos\\HouraDotNet\\HouraDotNet\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "HouraDotNet\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAAFQAAAAAAAAAAAAuwFkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-03T19:18:57.425Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "20260703191644_edit.cs",
+              "DocumentMoniker": "C:\\Users\\Mega Store\\source\\repos\\HouraDotNet\\HouraDAL\\Migrations\\20260703191644_edit.cs",
+              "RelativeDocumentMoniker": "HouraDAL\\Migrations\\20260703191644_edit.cs",
+              "ToolTip": "C:\\Users\\Mega Store\\source\\repos\\HouraDotNet\\HouraDAL\\Migrations\\20260703191644_edit.cs",
+              "RelativeToolTip": "HouraDAL\\Migrations\\20260703191644_edit.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-03T19:16:44.554Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "IServicePostingService.cs",
+              "DocumentMoniker": "C:\\Users\\Mega Store\\source\\repos\\HouraDotNet\\HouraBLL\\Service\\Contracts\\IServicePostingService.cs",
+              "RelativeDocumentMoniker": "HouraBLL\\Service\\Contracts\\IServicePostingService.cs",
+              "ToolTip": "C:\\Users\\Mega Store\\source\\repos\\HouraDotNet\\HouraBLL\\Service\\Contracts\\IServicePostingService.cs",
+              "RelativeToolTip": "HouraBLL\\Service\\Contracts\\IServicePostingService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-03T19:14:15.794Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\Mega Store\\source\\repos\\HouraDotNet\\HouraDAL\\Entities\\User.cs",
+              "RelativeDocumentMoniker": "HouraDAL\\Entities\\User.cs",
+              "ToolTip": "C:\\Users\\Mega Store\\source\\repos\\HouraDotNet\\HouraDAL\\Entities\\User.cs",
+              "RelativeToolTip": "HouraDAL\\Entities\\User.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAgwB0AAABpAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-03T19:08:26.872Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "IGenericRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Mega Store\\source\\repos\\HouraDotNet\\HouraDAL\\Repository\\Contracts\\IGenericRepository.cs",
+              "RelativeDocumentMoniker": "HouraDAL\\Repository\\Contracts\\IGenericRepository.cs",
+              "ToolTip": "C:\\Users\\Mega Store\\source\\repos\\HouraDotNet\\HouraDAL\\Repository\\Contracts\\IGenericRepository.cs",
+              "RelativeToolTip": "HouraDAL\\Repository\\Contracts\\IGenericRepository.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-03T12:28:23.815Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "ReviewService.cs",
+              "DocumentMoniker": "C:\\Users\\Mega Store\\source\\repos\\HouraDotNet\\HouraBLL\\Service\\ReviewService.cs",
+              "RelativeDocumentMoniker": "HouraBLL\\Service\\ReviewService.cs",
+              "ToolTip": "C:\\Users\\Mega Store\\source\\repos\\HouraDotNet\\HouraBLL\\Service\\ReviewService.cs",
+              "RelativeToolTip": "HouraBLL\\Service\\ReviewService.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAmwCQAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-03T12:23:35.184Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "PostApplicationService.cs",
+              "DocumentMoniker": "C:\\Users\\Mega Store\\source\\repos\\HouraDotNet\\HouraBLL\\Service\\PostApplicationService.cs",
+              "RelativeDocumentMoniker": "HouraBLL\\Service\\PostApplicationService.cs",
+              "ToolTip": "C:\\Users\\Mega Store\\source\\repos\\HouraDotNet\\HouraBLL\\Service\\PostApplicationService.cs",
+              "RelativeToolTip": "HouraBLL\\Service\\PostApplicationService.cs",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAuwFQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-03T12:22:35.127Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "ServicePostingService.cs",
+              "DocumentMoniker": "C:\\Users\\Mega Store\\source\\repos\\HouraDotNet\\HouraBLL\\Service\\ServicePostingService.cs",
+              "RelativeDocumentMoniker": "HouraBLL\\Service\\ServicePostingService.cs",
+              "ToolTip": "C:\\Users\\Mega Store\\source\\repos\\HouraDotNet\\HouraBLL\\Service\\ServicePostingService.cs",
+              "RelativeToolTip": "HouraBLL\\Service\\ServicePostingService.cs",
+              "ViewState": "AgIAAEQAAAAAAAAAAADgv0kAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-03T12:21:02.628Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "ITimeBankService.cs",
+              "DocumentMoniker": "C:\\Users\\Mega Store\\source\\repos\\HouraDotNet\\HouraBLL\\Service\\Contracts\\ITimeBankService.cs",
+              "RelativeDocumentMoniker": "HouraBLL\\Service\\Contracts\\ITimeBankService.cs",
+              "ToolTip": "C:\\Users\\Mega Store\\source\\repos\\HouraDotNet\\HouraBLL\\Service\\Contracts\\ITimeBankService.cs",
+              "RelativeToolTip": "HouraBLL\\Service\\Contracts\\ITimeBankService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-03T12:17:48.884Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

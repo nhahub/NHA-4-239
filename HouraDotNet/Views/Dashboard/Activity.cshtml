@@ -1,0 +1,118 @@
+@model IEnumerable<ServiceTransaction>
+@{
+    ViewData["Title"] = "Activity";
+}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Activity Requests</title>
+    
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="~/css/Activity.css" />
+    <link rel="stylesheet" href="~/css/bootstrap.min.css" />
+    <script src="~/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div class="side-nav min-vh-100 d-flex position-fixed z-3 bg-black">
+      <div
+        class="rightSide d-flex flex-column justify-content-between min-vh-100 p-4"
+      >
+        <div>
+          <ul class="ul-nav">
+            <li class="pt-4">
+              <a class="nav-link b-hover" asp-controller="Home" asp-action="Index">home</a>
+            </li>
+            <li class="pt-4">
+              <a class="nav-link b-hover" asp-controller="Services" asp-action="MyServices">my services</a>
+            </li>
+            <li>
+              <a class="nav-link b-hover" asp-controller="Dashboard" asp-action="Notifications">notification</a>
+            </li>
+            <li>
+              <a class="nav-link b-hover" asp-controller="Dashboard" asp-action="Index">dashboard</a>
+            </li>
+            <li>
+              <a class="nav-link b-hove" asp-controller="TimeBank" asp-action="PurchaseHours">purchase hours</a>
+            </li>
+            <li>
+              <a class="nav-link b-hover" asp-controller="Chat" asp-action="Index">send notes</a>
+            </li>
+            <li>
+              <a class="nav-link b-hover" asp-controller="Services" asp-action="QuickLearning">quick learning</a>
+            </li>
+            <li>
+              <a class="nav-link b-hover top-0" asp-controller="Account" asp-action="Login">login</a>
+            </li>
+            <li>
+              <a class="nav-link b-hover top-0" asp-controller="Account" asp-action="SignUp">sign up</a>
+            </li>
+            <li>
+              <a class="nav-link b-hover top-0" asp-controller="Services" asp-action="Browse">browse services</a>
+            </li>
+            <li>
+              <a class="nav-link b-hover top-0" asp-controller="Dashboard" asp-action="Profile">profile</a>
+            </li>
+            <li>
+              <a class="nav-link b-hover top-0" asp-controller="Home" asp-action="Contact">contact us</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="social-media text-white">
+          <i class="fa-brands fa-facebook pb-2"></i>
+          <i class="fa-brands fa-twitter pb-2"></i>
+          <i class="fa-solid fa-globe pb-2"></i>
+          <footer class="text-white">
+            Copyright © 2019 All Rights Reserved.
+          </footer>
+        </div>
+      </div>
+      <div
+        class="leftSide bg-white p-2 pt-4 text-black d-flex flex-column justify-content-between text-center"
+      >
+        <i class="fa-solid fa-bars manue-i"></i>
+        <div class="b-icons">
+          <i class="fa-solid fa-globe d-block pb-2"></i>
+          <i class="fa-solid fa-share-nodes"></i>
+        </div>
+      </div>
+    </div>
+    <div class="tabs">
+      <button class="tab active">Activity only</button>
+      <button class="tab">All requests</button>
+    </div>
+
+    <div class="container">
+      <div id="requests-container">
+        @if (Model != null && Model.Any())
+        {
+            foreach (var request in Model)
+            {
+                <div class="request-item">
+                    <div class="card">
+                        <div class="card-header">
+                            <h2>Transaction @request.TransactionId.ToString().Substring(0, 8)</h2>
+                            <span class="status">@request.Status</span>
+                        </div>
+                        <p><strong>Duration:</strong> @request.DurationInMinutes min</p>
+                        <p><strong>Date:</strong> @request.TransactionDate.ToString("g")</p>
+                        <div class="actions">
+                            <a asp-controller="Chat" asp-action="Index"><button>Message</button></a>
+                        </div>
+                    </div>
+                </div>
+            }
+        }
+        else
+        {
+            <p>No requests found.</p>
+        }
+      </div>
+    </div>
+  </body>
+</html>

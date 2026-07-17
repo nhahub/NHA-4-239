@@ -1,0 +1,233 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+   
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f9f9f9;
+  }
+  h1{
+    padding-left: 100px;
+  }
+footer {
+  background: #e67212;
+  color: white;
+  text-align: center;
+  padding: 20px 10px;
+}
+
+.footer-links a {
+  color: #000000;
+  margin: 0 10px;
+  text-decoration: none;
+}
+.ul-nav {
+  list-style: none;
+  color: white;
+  padding: 0;
+}
+.ul-nav li {
+  padding-block: 7px;
+  cursor: pointer;
+}
+
+.rightSide {
+  width: 80%;
+}
+.header-container,
+.hero-text,
+h2,
+.section,
+.text-warning {
+  padding-left: 100px !important;
+}
+.side-nav {
+  overflow: hidden;
+}
+.logo {
+  width: 50px;
+}
+.manue-i {
+  font-size: 30px;
+}
+.side-nav i {
+  cursor: pointer;
+}
+.ul-nav li {
+  position: relative;
+}
+li .focus-border {
+  position: relative;
+}
+
+li .focus-border::after {
+  content: "";
+  position: absolute;
+  bottom: 20%;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  transition: all 0.5s;
+}
+
+li .b-hover {
+  position: relative;
+}
+
+li .b-hover::after {
+  content: "";
+  position: absolute;
+  bottom: -20%;
+  right: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: black;
+  transition: all 0.5s;
+}
+
+li .b-hover:focus::after {
+  width: 100%;
+}
+li a,
+.nav-link {
+  padding-bottom: 10px;
+}
+  header {
+    background: white;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+
+  }
+  header h1 {
+    text-align: left;
+    margin-left: 22px;
+    font-size: 35px;
+  }
+  header h2{
+    text-align: left;
+    margin-left: 1px;
+    font-size: 35px;
+  }
+
+  .search-area input {
+    padding: 10px;
+    width: 300px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+  }
+  
+  .create-btn {
+    padding: 10px 20px;
+    background-color: #e67212;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+  }
+  
+  .filters {
+    margin-top: 15px;
+  }
+  
+  .filters select {
+    padding: 8px;
+    margin: 5px;
+    border-radius: 30px;
+  }
+  
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 30px;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  @media (max-width: 768px) {
+    .services-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .services-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+
+  
+  .card {
+    background: white;
+    border-radius: 30px;
+    padding: 50px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    text-align: center;
+  }
+  
+  .icon {
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+  
+  .card h3 {
+    margin: 10px 0;
+  }
+  
+  .card p {
+    color: #555;
+    font-size: 14px;
+  }
+  
+  .info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .join-btn {
+    background-color: #f57c00;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 30px;
+    cursor: pointer;
+  }
+  
+  .join-btn:hover, .create-btn:hover {
+    background-color: #e65100;
+  }
+  .time-banking {
+    display: flex;
+    align-items: left, bottom;
+    justify-content: left,bottom;
+    margin-top: 156px;
+    gap: 15px;
+  }
+  
+  .time-banking h2 {
+    font-size: 28px;
+    color: #333;
+    padding-top: 15px;
+    
+
+   
+  }
+  .banking-icon {
+    width: 50px;
+    height: 50px;
+
+  }
+  

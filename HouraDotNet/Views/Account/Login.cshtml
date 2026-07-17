@@ -1,0 +1,102 @@
+﻿@{
+    ViewData["Title"] = "Login";
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Houra - Login</title>
+    <link rel="stylesheet" href="~/css/login.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="~/img/233b436e-1119-40f2-a7c0-c202dda409f2.jpg" alt="Logo" />
+                <span>Houra</span>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a asp-controller="Dashboard" asp-action="Index">Home</a></li>
+                    <li><a asp-controller="Services" asp-action="Browse">Browse Services</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Feedback</a></li>
+                </ul>
+            </nav>
+            <div class="auth-buttons">
+                <a asp-controller="Account" asp-action="SignUp" class="signup-btn">Sign up</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="form-section">
+            <h2>Welcome Back to Houra</h2>
+            <h1>log in to exchange time &amp; skills</h1>
+
+            @if (!ViewData.ModelState.IsValid)
+            {
+                <div class="error-message" style="display:block;">
+                    @foreach (var error in ViewData.ModelState.Values.SelectMany(v => v.Errors))
+                    {
+                        <div>@error.ErrorMessage</div>
+                    }
+                </div>
+            }
+
+            <form asp-controller="Account" asp-action="Login" method="post" novalidate>
+                <input type="email" name="email" placeholder="Email adress" required>
+                <div class="error-message" id="email-error"></div>
+
+                <input type="password" name="password" placeholder="Password" required>
+                <div class="error-message" id="password-error"></div>
+
+                <button type="submit" class="form-button">login</button>
+            </form>
+            <p>Forget Password? <span><a asp-controller="Account" asp-action="SignUp"> Don't have an account ?</a></span></p>
+        </div>
+
+        <div class="image-section">
+            <img src="~/img/bf530854-651e-4ba9-af2a-db63c16d5a31.jpg" alt="World Youth Skills Day">
+        </div>
+    </main>
+
+    <script>
+        // تحقق بسيط في المتصفح بس من غير ما يمنع الفورم إنها تتبعت للسيرفر
+        document.addEventListener("DOMContentLoaded", function () {
+            const form = document.querySelector("form");
+            const emailInput = form.querySelector("input[name='email']");
+            const passwordInput = form.querySelector("input[name='password']");
+            const emailErr = document.getElementById("email-error");
+            const passwordErr = document.getElementById("password-error");
+
+            function validateEmail(email) {
+                return /^[^\s@@]+@@[^\s@@]+\.[^\s@@]+$/.test(email);
+            }
+
+            emailInput.addEventListener("input", () => {
+                const v = emailInput.value.trim();
+                emailErr.textContent = v === "" || validateEmail(v) ? "" : "Please enter a valid email.";
+            });
+
+            form.addEventListener("submit", function (e) {
+                const email = emailInput.value.trim();
+                const password = passwordInput.value.trim();
+
+                if (email === "" || password === "") {
+                    e.preventDefault();
+                    alert("Please fill in both fields.");
+                    return;
+                }
+                if (!validateEmail(email)) {
+                    e.preventDefault();
+                    emailErr.textContent = "Please enter a valid email.";
+                    return;
+                }
+                // مفيش e.preventDefault() هنا عمدًا عشان الفورم يتبعت فعليًا للـ AccountController
+            });
+        });
+    </script>
+</body>
+</html>

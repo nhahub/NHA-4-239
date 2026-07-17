@@ -1,0 +1,184 @@
+﻿@{
+    ViewData["Title"] = "Houra - Home";
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Houra</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <link rel="stylesheet" href="~/css/home2.css" />
+    <link rel="stylesheet" href="~/css/bootstrap.min.css" />
+</head>
+<body>
+    <div class="side-nav min-vh-100 d-flex position-fixed z-3 bg-black">
+        <div class="rightSide d-flex flex-column justify-content-between min-vh-100 p-4">
+            <div>
+                <ul class="ul-nav">
+                    <li class="pt-4">
+                        <a class="nav-link b-hover" asp-controller="Services" asp-action="MyServices">my services</a>
+                    </li>
+                    <li>
+                        <a class="nav-link b-hover" href="#">send notes</a>
+                    </li>
+                    <li>
+                        <a class="nav-link b-hover" asp-controller="Dashboard" asp-action="Notifications">notification</a>
+                    </li>
+                    <li>
+                        <a class="nav-link b-hover" asp-controller="Dashboard" asp-action="Index">dashboard</a>
+                    </li>
+                    <li>
+                        <a class="nav-link b-hove" asp-controller="TimeBank" asp-action="PurchaseHours">purshace hours</a>
+                    </li>
+                    <li>
+                        <a class="nav-link b-hover" href="#">your Requests</a>
+                    </li>
+                    <li>
+                        <a class="nav-link b-hover top-0" asp-controller="Account" asp-action="Login">login</a>
+                    </li>
+                    <li>
+                        <a class="nav-link b-hover top-0" asp-controller="Account" asp-action="SignUp">sign up</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="social-media text-white">
+                <i class="fa-brands fa-facebook pb-2"></i>
+                <i class="fa-brands fa-twitter pb-2"></i>
+                <i class="fa-solid fa-globe pb-2"></i>
+                <footer class="text-white">Copyright © 2019 All Rights Reserved.</footer>
+            </div>
+        </div>
+        <div class="leftSide bg-white p-2 pt-4 text-black d-flex flex-column justify-content-between text-center">
+            <i class="fa-solid fa-bars manue-i"></i>
+            <div class="b-icons">
+                <i class="fa-solid fa-globe d-block pb-2"></i>
+                <i class="fa-solid fa-share-nodes"></i>
+            </div>
+        </div>
+    </div>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="~/img/233b436e-1119-40f2-a7c0-c202dda409f2.jpg" alt="Logo" />
+                <span>Houra</span>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a class="text-dark fw-light focus-border" asp-controller="Home" asp-action="Index">Home</a></li>
+                    <li><a class="nav-link text-dark b-hover" href="#sec-1">How it Works</a></li>
+                    <li><a class="nav-link text-dark b-hover" asp-controller="Services" asp-action="Browse">Browse Services</a></li>
+                    <li><a class="nav-link text-dark b-hover" asp-controller="Dashboard" asp-action="Profile">profile</a></li>
+                    <li><a class="nav-link text-dark b-hover" href="#">quick learning</a></li>
+                    <li><a class="nav-link text-dark b-hover" href="#">FAQs</a></li>
+                    <li><a class="nav-link text-dark b-hover" href="#sec-4">features</a></li>
+                    <li><a class="nav-link text-dark b-hover" href="#sec-5">Testimonials</a></li>
+                </ul>
+            </nav>
+            <div class="auth-buttons">
+                <a asp-controller="Account" asp-action="Login" class="login-btn">Log In</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Exchange Time, Empower Lives</h1>
+                <p>Share your skills and others' time in return - no money involved.</p>
+                <a asp-controller="Account" asp-action="Login" class="get">Get Stareted</a>
+                <a href="#sec-l" class="learn">Learn More</a>
+            </div>
+            <div class="hero-image">
+                <img src="~/img/cf81d800-57d2-4f30-9137-c42e0fac9439.jpg" alt="Time Banking" />
+            </div>
+        </div>
+    </section>
+
+    <section class="features" id="sec-1">
+        <h2 class="text-warning">How It Works</h2>
+        <div class="feature-cards">
+            <div class="card">
+                <h3>Offer Skills</h3>
+                <p>Sign up, set up your profile, and offer your skills.</p>
+            </div>
+            <div class="card">
+                <h3>Provide Services</h3>
+                <p>Help others and earn time credits.</p>
+            </div>
+            <div class="card">
+                <h3>Spend Credits</h3>
+                <p>Use your earned time credits to get support when you need it.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-light my-5" id="sec-4">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center flex-wrap">
+                <div class="text-section" style="max-width: 50%">
+                    <h1>Houra</h1>
+                    <h2 class="text-warning">Features</h2>
+                    <ul class="features-list list-unstyled">
+                        <li><span class="text-warning">✔</span> Community support</li>
+                        <li><span class="text-warning">✔</span> Secure Platform</li>
+                        <li><span class="text-warning">✔</span> Easy to use</li>
+                        <li><span class="text-warning">✔</span> Flexible exchanges</li>
+                    </ul>
+                </div>
+
+                <div class="image-section" style="max-width: 45%">
+                    <img src="~/img/b039606b-88e0-4e90-904a-a28fb4bf8e73.jpg" alt="Illustration" class="img-fluid" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-us px-5" id="sec-l">
+        <div class="container">
+            <h2 class="text-warning">About Us</h2>
+            <p class="about-text">Organisation's mission is to foster a community by exchanging time and skills. At Allocate, each one assists the other.</p>
+        </div>
+    </section>
+
+    <section class="testimonials row bg-light" id="sec-5">
+        <h2 class="text-warning">Testimonials</h2>
+        <div class="testimonial col-2">
+            <img class="imagetest" src="~/img/09b6d58c-97ff-4988-a8e8-c97c3b6c706b.jpg" alt="" />
+            <h4>Sarah</h4>
+            <img src="~/img/5d60acb6-68ec-4fb7-94b0-804046585563.jpg" alt="" />
+            <p>"A fantastic way to connect with others and share skills."</p>
+        </div>
+        <div class="testimonial col-2">
+            <img class="imagetest" src="~/img/ceabbf79-817d-4942-84ca-b16719192ff1.jpg" alt="" />
+            <h4>James</h4>
+            <img src="~/img/5d60acb6-68ec-4fb7-94b0-804046585563.jpg" alt="" />
+            <p>" I've earned and spent time credits easily. Love it!"</p>
+        </div>
+        <div class="testimonial col-2">
+            <img class="imagetest" src="~/img/d23149f2-abc3-420a-8d65-9bedb6e9103d.jpg" alt="" />
+            <h4>Maria</h4>
+            <img src="~/img/5d60acb6-68ec-4fb7-94b0-804046585563.jpg" alt="" />
+            <p>" The platform is user-frindly and very supportive."</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-links">
+            <a href="#">Features</a>
+            <a href="#">FAQs</a>
+            <a href="#">Help Center</a>
+            <a href="#">Contact Us</a>
+        </div>
+        <div class="social-media">
+            <p>Follow Us</p>
+        </div>
+        <p>&copy; 2026 Houra</p>
+    </footer>
+
+    <script src="~/js/jquery-3.7.1.min.js"></script>
+    <script src="~/js/bootstrap.min.js"></script>
+    <script src="~/js/home.js"></script>
+</body>
+</html>

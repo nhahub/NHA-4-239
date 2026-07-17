@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36221.1 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HouraPL", "HouraDotNet\HouraPL.csproj", "{CE02EED0-CD07-493E-BED9-587B67CA5BF2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HouraBLL", "HouraBLL\HouraBLL.csproj", "{9833F80F-50A1-44B9-85ED-16B30B98ECDA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HouraDAL", "HouraDAL\HouraDAL.csproj", "{ACD2C56E-71AC-47FB-930C-B1251704ECEC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CE02EED0-CD07-493E-BED9-587B67CA5BF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE02EED0-CD07-493E-BED9-587B67CA5BF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE02EED0-CD07-493E-BED9-587B67CA5BF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE02EED0-CD07-493E-BED9-587B67CA5BF2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9833F80F-50A1-44B9-85ED-16B30B98ECDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9833F80F-50A1-44B9-85ED-16B30B98ECDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9833F80F-50A1-44B9-85ED-16B30B98ECDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9833F80F-50A1-44B9-85ED-16B30B98ECDA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ACD2C56E-71AC-47FB-930C-B1251704ECEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ACD2C56E-71AC-47FB-930C-B1251704ECEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ACD2C56E-71AC-47FB-930C-B1251704ECEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ACD2C56E-71AC-47FB-930C-B1251704ECEC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DF567705-758E-4F18-901C-30E692DF0D81}
+	EndGlobalSection
+EndGlobal

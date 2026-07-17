@@ -1,0 +1,253 @@
+﻿@{
+    ViewData["Title"] = "Dashboard";
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="~/css/bootstrap.min.css" />
+    <style>
+        .ul-nav {
+            list-style: none;
+            color: white;
+            padding: 0;
+        }
+
+            .ul-nav li {
+                padding-block: 7px;
+                cursor: pointer;
+            }
+
+        .rightSide {
+            width: 80%;
+        }
+
+        .side-nav {
+            overflow: hidden;
+        }
+
+        .logo {
+            width: 50px;
+        }
+
+        .manue-i {
+            font-size: 30px;
+        }
+
+        .side-nav i {
+            cursor: pointer;
+        }
+
+        .ul-nav li {
+            position: relative;
+        }
+
+        li .b-hover {
+            position: relative;
+        }
+
+            li .b-hover::after {
+                content: "";
+                position: absolute;
+                bottom: -20%;
+                right: 0;
+                left: 0;
+                width: 0%;
+                height: 2px;
+                background-color: black;
+                transition: all 0.5s;
+            }
+
+        li a, .nav-link {
+            padding-bottom: 10px;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #fefcf6;
+        }
+
+        /* عرض السايد بار قابل للطي */
+        .side-nav {
+            width: 260px;
+            transition: width 0.3s ease;
+        }
+
+            .side-nav.collapsed {
+                width: 70px;
+            }
+
+                .side-nav.collapsed .rightSide {
+                    display: none;
+                }
+
+        .header-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            background-color: #fefcf6;
+            border-bottom: 1px solid #f3dfc3;
+            margin-left: 260px;
+            transition: margin-left 0.3s ease;
+        }
+
+        body.nav-collapsed .header-wrapper,
+        body.nav-collapsed .dashboard-container {
+            margin-left: 70px;
+        }
+
+        .dashboard-banner {
+            background-color: #f58220;
+            color: white;
+            font-size: 28px;
+            font-weight: bold;
+            padding: 10px 40px 10px 20px;
+            clip-path: polygon(0 0, 90% 0, 100% 50%, 90% 100%, 0 100%);
+            width: 350px;
+        }
+
+        .navbar {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            font-weight: bold;
+        }
+
+            .navbar a {
+                color: #f58220;
+                text-decoration: none;
+                position: relative;
+            }
+
+                .navbar a::after {
+                    content: '';
+                    position: absolute;
+                    width: 0;
+                    height: 2px;
+                    background-color: #f58220;
+                    bottom: -3px;
+                    left: 0;
+                    transition: width 0.3s;
+                }
+
+                .navbar a:hover::after {
+                    width: 100%;
+                }
+
+        .dashboard-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 60px;
+            padding: 50px;
+            margin-left: 260px;
+            transition: margin-left 0.3s ease;
+        }
+
+        .circle-row {
+            display: flex;
+            justify-content: center;
+            gap: 80px;
+            flex-wrap: wrap;
+        }
+
+        .circle-box {
+            width: 180px;
+            height: 180px;
+            background-color: #fbd6ae;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 6px 14px rgba(0,0,0,0.05);
+            font-size: 26px;
+            font-weight: bold;
+            color: #f58220;
+            transition: transform 0.2s;
+            text-align: center;
+            padding: 10px;
+        }
+
+            .circle-box:hover {
+                transform: scale(1.05);
+            }
+
+        .circle-label {
+            margin-top: 12px;
+            text-align: center;
+            font-size: 16px;
+            font-weight: bold;
+            color: #444;
+        }
+    </style>
+</head>
+<body>
+    <div class="side-nav min-vh-100 d-flex position-fixed z-3 bg-black" id="sideNav">
+        <div class="rightSide d-flex flex-column justify-content-between min-vh-100 p-4">
+            <div>
+                <ul class="ul-nav">
+                    <li class="pt-4"><a class="nav-link text-white b-hover" asp-controller="Dashboard" asp-action="Index">home</a></li>
+                    <li class="pt-4"><a class="nav-link text-white b-hover" asp-controller="Services" asp-action="MyServices">my services</a></li>
+                    <li><a class="nav-link text-white b-hover" asp-controller="Dashboard" asp-action="Notifications">notification</a></li>
+                    <li><a class="nav-link text-white b-hover" asp-controller="Dashboard" asp-action="Profile">profile</a></li>
+                    <li><a class="nav-link text-white b-hover" asp-controller="TimeBank" asp-action="PurchaseHours">purchase hours</a></li>
+                    <li><a class="nav-link text-white b-hover" asp-controller="Services" asp-action="Browse">browse services</a></li>
+                    <li><a class="nav-link text-white b-hover top-0" asp-controller="Account" asp-action="LogOut">logout</a></li>
+                </ul>
+            </div>
+            <div class="social-media text-white">
+                <i class="fa-brands fa-facebook pb-2"></i>
+                <i class="fa-brands fa-twitter pb-2"></i>
+                <i class="fa-solid fa-globe pb-2"></i>
+                <footer class="text-white">Copyright &copy; 2026 All Rights Reserved.</footer>
+            </div>
+        </div>
+        <div class="leftSide bg-white p-2 pt-4 text-black d-flex flex-column justify-content-between text-center">
+            <i class="fa-solid fa-bars manue-i" id="sideNavToggle"></i>
+            <div class="b-icons">
+                <i class="fa-solid fa-globe d-block pb-2"></i>
+                <i class="fa-solid fa-share-nodes"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-wrapper">
+        <div class="dashboard-banner">Dashboard</div>
+        <div class="navbar">
+            <a asp-controller="Dashboard" asp-action="Index">Home</a>
+            <a asp-controller="Services" asp-action="MyServices">MyServices</a>
+            <a asp-controller="TimeBank" asp-action="PurchaseHours">Buy Hours</a>
+            <a asp-controller="Dashboard" asp-action="Notifications">Notifications</a>
+            <a asp-controller="Dashboard" asp-action="Profile"><i class="fa-regular fa-user" style="color: #f0870f;"></i></a>
+        </div>
+    </div>
+
+    <div class="dashboard-container">
+        <div class="circle-row">
+            <div>
+                <div class="circle-box">@ViewBag.ActiveServices</div>
+                <div class="circle-label">Active Services</div>
+            </div>
+            <div>
+                <div class="circle-box">@ViewBag.TimeBalance</div>
+                <div class="circle-label">Time Balance</div>
+            </div>
+            <div>
+                <div class="circle-box">@ViewBag.OngoingRequests</div>
+                <div class="circle-label">Ongoing Requests</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("sideNavToggle").addEventListener("click", function () {
+            document.getElementById("sideNav").classList.toggle("collapsed");
+            document.body.classList.toggle("nav-collapsed");
+        });
+    </script>
+</body>
+</html>

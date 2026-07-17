@@ -1,0 +1,106 @@
+﻿@model User
+@{
+    ViewData["Title"] = "Profile";
+    var reviews = ViewBag.Reviews as IEnumerable<Review>;
+    double avgRating = ViewBag.AverageRating ?? 5.0;
+    var skills = (Model.Skills ?? "").Split(',', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries);
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="~/css/myprofile.css">
+</head>
+<body>
+    <header>
+        <nav class="top-nav">
+            <a asp-controller="Dashboard" asp-action="Index">dashboard</a>
+            <a asp-controller="Services" asp-action="MyServices">my services</a>
+            <a asp-controller="Dashboard" asp-action="Notifications">Notifications</a>
+            <span class="user-icon"><i class="fas fa-user"></i></span>
+        </nav>
+    </header>
+
+    <main class="profile-container">
+        @if (TempData["SuccessMessage"] != null)
+        {
+            <div style="position:fixed; top:20px; right:20px; background:#c8f0c8; color:#1c5c1c; padding:12px 20px; border-radius:8px; box-shadow:0 2px 10px rgba(0,0,0,0.1); z-index:99;">
+                @TempData["SuccessMessage"]
+            </div>
+        }
+        <section class="sidebar">
+            <h2>PROFILE</h2>
+            <img src="~/img/profile-pic.jpeg" alt="Profile_Pic" class="profile_pic" style="width:200px;height:200px;border-radius:50px;">
+            <div class="Names"><h3>@Model.FullName</h3></div>
+            <div class="skills">
+                <span class="skills-label">skills :</span>
+                <div class="skill-tags">
+                    @foreach (var skill in skills)
+                    {
+                        <span class="skill-tag">@skill</span>
+                    }
+                </div>
+            </div>
+            <a asp-controller="Dashboard" asp-action="EditProfile" class="edit-profile" style="text-decoration:none; display:inline-block;">Edit Profile</a>
+        </section>
+
+        <section class="main-content">
+            <div class="about-me">
+                <h3>About Me</h3>
+                <p>@Model.Bio</p>
+            </div>
+
+            <div class="bottom-content">
+                <div class="service-offered">
+                    <h3>Service Offered</h3>
+                    <h2>@(skills.Length > 0 ? skills[0] : "N/A")</h2>
+                    <div class="service-time">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <strong>1 hour =</strong>
+                            <p class="hour">1 hour of learning</p>
+                        </div>
+                    </div>
+
+                    <div class="reviews">
+                        <h4>Reviews (@(reviews?.Count() ?? 0))</h4>
+                        <div class="stars">
+                            @for (int i = 1; i <= 5; i++)
+                            {
+                                if (i <= Math.Round(avgRating))
+                                {
+                                    <i class="fas fa-star"></i>
+                                }
+                                else
+                                {
+                                    <i class="far fa-star"></i>
+                                }
+                            }
+                        </div>
+                        <div class="line"></div>
+                        @if (reviews != null && reviews.Any())
+                        {
+                            foreach (var review in reviews)
+                            {
+                                <p class="review-text">"@review.Comment"</p>
+                            }
+                        }
+                        else
+                        {
+                            <p class="review-text">"Share a little of your time, and gain a lot in return."</p>
+                        }
+                        <div class="line"></div>
+                    </div>
+                </div>
+
+                <div class="timebanking">
+                    <img src="~/img/aa16ebe5-f566-46a6-afd9-4a926ad379b8.jpg" alt="">
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

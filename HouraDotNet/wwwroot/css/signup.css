@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+  background-color: rgb(255, 253, 253);
+}
+header {
+  color: black;
+  padding: 10px 20px;
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.logo span {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #e67212;
+}
+
+nav {
+  flex: 1;
+  text-align: center;
+}
+
+.nav-links {
+  list-style: none;
+  display: inline-flex;
+}
+
+.nav-links li {
+  margin: 0 15px;
+}
+
+.nav-links a {
+  color: #000000;
+  text-decoration: none;
+  font-size: 1em;
+}
+
+.auth-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.auth-buttons a {
+  margin-left: 10px;
+  padding: 5px 10px;
+  background-color: #e67212;
+  color: #fff;
+  border-radius: 30px;
+  text-decoration: none;
+}
+.container {
+  display: flex;
+  padding: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-section {
+  flex: 1;
+}
+
+.form-section h2 {
+  font-size: 40px;
+  color: #e67212;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form input {
+  padding: 15px;
+  margin-bottom: 20px;
+  background-color: #f1f1f1;
+  border: none;
+  border-radius: 5px;
+}
+
+.form-button {
+  background-color: #e67212;
+  color: #fff;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.form-section p {
+  margin-top: 15px;
+  font-size: 16px;
+}
+
+.form-section a {
+  color: #e67212;
+  text-decoration: none;
+}
+
+/* Image Section */
+.image-section {
+  flex: 1;
+  text-align: center;
+}
+
+.image-section img {
+  max-width: 100%;
+}
+.image-signup {
+  height: 400px;
+}
+.error-message {
+  color: red;
+  font-size: 0.9rem;
+  margin-top: 4px;
+  min-height: 1.2em;
+}

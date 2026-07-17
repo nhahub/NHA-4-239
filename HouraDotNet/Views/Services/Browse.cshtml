@@ -1,0 +1,129 @@
+﻿@model IEnumerable<ServicePosting>
+@{
+    ViewData["Title"] = "Browse Services";
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Browse Services</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <link rel="stylesheet" href="~/css/browse.css">
+    <link rel="stylesheet" href="~/css/bootstrap.min.css" />
+    <style>
+        .side-nav {
+            width: 260px;
+            transition: width 0.3s ease;
+        }
+
+            .side-nav.collapsed {
+                width: 70px;
+            }
+
+                .side-nav.collapsed .rightSide {
+                    display: none;
+                }
+
+        .page-content {
+            margin-left: 260px;
+            transition: margin-left 0.3s ease;
+        }
+
+        body.nav-collapsed .page-content {
+            margin-left: 70px;
+        }
+
+        .leftSide {
+            width: 70px;
+        }
+
+        .manue-i {
+            font-size: 26px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="side-nav min-vh-100 d-flex position-fixed z-3 bg-black" id="sideNav">
+        <div class="rightSide d-flex flex-column justify-content-between min-vh-100 p-4">
+            <div>
+                <ul class="ul-nav">
+                    <li class="pt-4"><a class="nav-link b-hover text-white" asp-controller="Dashboard" asp-action="Index">home</a></li>
+                    <li class="pt-4"><a class="nav-link b-hover text-white" asp-controller="Services" asp-action="MyServices">my services</a></li>
+                    <li><a class="nav-link b-hover text-white" asp-controller="Dashboard" asp-action="Notifications">notification</a></li>
+                    <li><a class="nav-link b-hover text-white" asp-controller="Dashboard" asp-action="Index">dashboard</a></li>
+                    <li><a class="nav-link b-hover text-white" asp-controller="TimeBank" asp-action="PurchaseHours">purchase hours</a></li>
+                    <li><a class="nav-link b-hover text-white" asp-controller="Dashboard" asp-action="Profile">profile</a></li>
+                </ul>
+            </div>
+            <div class="social-media text-white">
+                <i class="fa-brands fa-facebook pb-2"></i>
+                <i class="fa-brands fa-twitter pb-2"></i>
+                <i class="fa-solid fa-globe pb-2"></i>
+                <footer class="text-white">Copyright &copy; 2026 All Rights Reserved.</footer>
+            </div>
+        </div>
+        <div class="leftSide bg-white p-2 pt-4 text-black d-flex flex-column justify-content-between text-center">
+            <i class="fa-solid fa-bars manue-i" id="sideNavToggle"></i>
+            <div class="b-icons">
+                <i class="fa-solid fa-globe d-block pb-2"></i>
+                <i class="fa-solid fa-share-nodes"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="page-content">
+        <header>
+            <h1>Browse</h1>
+            <h2>Services</h2>
+
+            <form method="get" asp-controller="Services" asp-action="Browse" class="filters">
+                <input type="text" name="searchTerm" value="@ViewBag.SearchTerm" placeholder="Search services..." />
+                <button type="submit">Search</button>
+            </form>
+        </header>
+
+        @if (TempData["SuccessMessage"] != null)
+        {
+            <div class="alert alert-success" style="margin: 10px 40px;">@TempData["SuccessMessage"]</div>
+        }
+        @if (TempData["ErrorMessage"] != null)
+        {
+            <div class="alert alert-danger" style="margin: 10px 40px;">@TempData["ErrorMessage"]</div>
+        }
+
+        <section class="services-grid">
+            @if (Model != null && Model.Any())
+            {
+                foreach (var posting in Model)
+                {
+                    <div class="card">
+                        <div class="icon"><i class="fa-solid fa-lightbulb" style="color: #e67212;"></i></div>
+                        <h3>@posting.Title</h3>
+                        <p>@posting.Description</p>
+                        <div class="info">
+                            <span>@posting.EstimatedDurationInMinutes min</span>
+                            <form asp-controller="Services" asp-action="JoinService" method="post" style="display:inline;">
+                                <input type="hidden" name="postId" value="@posting.PostId" />
+                                <button type="submit" class="join-btn">Join</button>
+                            </form>
+                        </div>
+                    </div>
+                }
+            }
+            else
+            {
+                <p style="padding: 20px 40px;">No services available right now@(string.IsNullOrEmpty((string)ViewBag.SearchTerm) ? "." : $" matching \"{ViewBag.SearchTerm}\".")</p>
+            }
+        </section>
+    </div>
+
+    <script>
+        document.getElementById("sideNavToggle").addEventListener("click", function () {
+            document.getElementById("sideNav").classList.toggle("collapsed");
+            document.body.classList.toggle("nav-collapsed");
+        });
+    </script>
+</body>
+</html>

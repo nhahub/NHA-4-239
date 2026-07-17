@@ -1,0 +1,187 @@
+@{
+    ViewData["Title"] = "FAQ";
+}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>FAQ Page</title>
+    <link rel="stylesheet" href="~/css/faq.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />  
+     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css
+
+
+
+"
+    /> 
+     <link rel="stylesheet" href="~/css/bootstrap.min.css" /> 
+  </head>
+  <body>
+    <header>
+         <div class="side-nav min-vh-100 d-flex position-fixed z-3 bg-black">
+      <div
+        class="rightSide d-flex flex-column justify-content-between min-vh-100 p-4"
+      >
+        <div>
+          <ul class="ul-nav">
+            <li class="pt-4">
+              <a class="nav-link text light b-hover" asp-controller="Home" asp-action="Index"
+                >home</a >
+            </li>
+            <li class="pt-4">
+              <a class="nav-link text light b-hover" asp-controller="Services" asp-action="MyServices"
+                >my services</a>
+            </li>
+            <li>
+              <a class="nav-link text light b-hover" asp-controller="Dashboard" asp-action="Notifications"
+                >notification</a>
+            </li>
+            <li>
+              <a class="nav-link text light b-hover" asp-controller="Dashboard" asp-action="Index">dashboard</a>
+            </li>
+            <li>
+              <a class="nav-link text light b-hove" asp-controller="TimeBank" asp-action="PurchaseHours"
+                >purshace hours</a>
+            </li>
+            <li>
+              <a class="nav-link text light b-hover" asp-controller="Chat" asp-action="Index"
+                >send notes
+              </a>
+            </li>
+            <li>
+              <a class="nav-link text light b-hover" asp-controller="Services" asp-action="QuickLearning"
+                >quick learning
+              </a>
+            </li>
+            <li>
+              <a class="nav-link text light b-hover top-0" asp-controller="Account" asp-action="Login">login </a>
+            </li>
+            <li>
+              <a class="nav-link text light b-hover top-0" asp-controller="Account" asp-action="SignUp"
+                >sign up
+              </a>
+            </li>
+            <li>
+              <a class="nav-link text light b-hover top-0" asp-controller="Services" asp-action="Browse"
+                >browse services 
+              </a>
+            </li>
+            <li>
+              <a class="nav-link text light b-hover top-0" asp-controller="Dashboard" asp-action="Profile"
+                >profile
+              </a>
+            </li>
+            <li>
+              <a class="nav-link text light b-hover top-0" asp-controller="Home" asp-action="Contact"
+                >contact us
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="social-media text-white">
+          <i class="fa-brands fa-facebook pb-2"></i>
+          <i class="fa-brands fa-twitter pb-2"></i>
+          <i class="fa-solid fa-globe pb-2"></i>
+          <footer class="text-white">
+            Copyright Â© 2019 All Rights Reserved.
+          </footer>
+        </div>
+      </div>
+      <div
+        class="leftSide bg-white p-2 pt-4 text-black d-flex flex-column justify-content-between text-center"
+      >
+        <i class="fa-solid fa-bars manue-i"></i>
+        <div class="b-icons">
+          <i class="fa-solid fa-globe d-block pb-2"></i>
+          <i class="fa-solid fa-share-nodes"></i>
+        </div>
+      </div>
+    </div> 
+      <div class="header-container">
+        <div class="logo">
+          <img
+            src="~/img/233b436e-1119-40f2-a7c0-c202dda409f2.jpg"
+            alt="Logo"
+          />
+          <span>Houra</span>
+        </div>
+       
+        <div class="auth-buttons">
+          <a asp-controller="Account" asp-action="Login" class="login-btn">Log In</a>
+        </div>
+      </div>
+    </header>
+    <div class="container">
+      <div class="faq-section">
+        <h1>Frequently Asked Questions (FAQ)</h1>
+
+        <div class="faq-item">
+          <h3 class="faq-question">
+            Who can use the Houra platform? <i class="fas fa-plus"></i>
+          </h3>
+        </div>
+        <div class="answer-fqa ">
+          Anyone who wants to exchange services using time as currency can use
+          the platform. Whether you're a student, a professional, or a retiree,
+          you can offer your skills and request help from others.
+        </div>
+
+        <div class="faq-item">
+          <h3 class="faq-question">
+            How does the Houra credit system work? <i class="fas fa-plus"></i>
+          </h3>
+        </div>
+        <div class="answer-fqa ">
+          For every hour you spend helping someone, you earn one time credit.
+          You can use that credit later to request an hour of service from
+          another member.
+        </div>
+
+        <div class="faq-item">
+          <h3 class="faq-question">
+            Can I chat with someone before accepting an exchange?
+            <i class="fas fa-plus"></i>
+          </h3>
+        </div>
+        <div class="answer-fqa ">
+          Yes, users can send messages and chat before confirming an exchange.
+          This helps both parties agree on the service details and schedule.
+        </div>
+        <div class="faq-item">
+          <h3 class="faq-question">
+            Is this only for local exchanges? <i class="fas fa-plus"></i>
+          </h3>
+        </div>
+        <div class="answer-fqa ">
+          No, the Time Bank supports both local and remote exchanges. If the
+          service can be provided online (like tutoring or design), you can
+          collaborate with people from anywhere.
+        </div>
+      </div>
+
+      <div class="question-box">
+        <div class="icon">
+          <i class="fas fa-comments"></i>
+        </div>
+        <h2>Do you have more questions?</h2>
+        <p>
+          Want to know more about our premium service?<br />Meet the right
+          platform to help you realize.
+        </p>
+        <form>
+          <input type="text" placeholder="your question" />
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>    
+<script src="~/js/jquery-3.7.1.min.js"></script>
+    <script src="~/js/faq.js"></script>
+  </body>
+</html>

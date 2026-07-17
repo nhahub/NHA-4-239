@@ -1,0 +1,12 @@
+C:\Users\Mega Store\source\repos\HouraDotNet\HouraDAL\bin\Debug\net8.0\HouraDAL.deps.json
+C:\Users\Mega Store\source\repos\HouraDotNet\HouraDAL\bin\Debug\net8.0\HouraDAL.dll
+C:\Users\Mega Store\source\repos\HouraDotNet\HouraDAL\bin\Debug\net8.0\HouraDAL.pdb
+C:\Users\Mega Store\source\repos\HouraDotNet\HouraDAL\obj\Debug\net8.0\HouraDAL.csproj.AssemblyReference.cache
+C:\Users\Mega Store\source\repos\HouraDotNet\HouraDAL\obj\Debug\net8.0\HouraDAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Mega Store\source\repos\HouraDotNet\HouraDAL\obj\Debug\net8.0\HouraDAL.AssemblyInfoInputs.cache
+C:\Users\Mega Store\source\repos\HouraDotNet\HouraDAL\obj\Debug\net8.0\HouraDAL.AssemblyInfo.cs
+C:\Users\Mega Store\source\repos\HouraDotNet\HouraDAL\obj\Debug\net8.0\HouraDAL.csproj.CoreCompileInputs.cache
+C:\Users\Mega Store\source\repos\HouraDotNet\HouraDAL\obj\Debug\net8.0\HouraDAL.dll
+C:\Users\Mega Store\source\repos\HouraDotNet\HouraDAL\obj\Debug\net8.0\refint\HouraDAL.dll
+C:\Users\Mega Store\source\repos\HouraDotNet\HouraDAL\obj\Debug\net8.0\HouraDAL.pdb
+C:\Users\Mega Store\source\repos\HouraDotNet\HouraDAL\obj\Debug\net8.0\ref\HouraDAL.dll
